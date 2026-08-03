@@ -1,7 +1,7 @@
 
 # OrangeHRM QA Automation Framework
 
-A **Selenium + TestNG + Page Object Model (POM)** test automation framework for the [OrangeHRM Demo Application](https://opensource-demo.orangehrmlive.com/), developed as part of the **Y4 Automated Quality Assurance (AQA)** coursework at the **University of Colombo School of Computing (UCSC)**.
+A **Selenium + TestNG + Page Object Model (POM)** test automation framework for the [OrangeHRM Demo Application](https://opensource-demo.orangehrmlive.com/), developed as part of the **Y4 Advanced Quality Assurance (AQA)** coursework at the **University of Colombo School of Computing (UCSC)**.
 
 ---
 
@@ -275,7 +275,7 @@ This project is developed for educational purposes as part of the AQA coursework
 
 ## 👥 Authors
 
-- **Ovindu Gunatunga ** - *Initial work* - [YourGitHub][(https://github.com/yourusername](https://github.com/ovindumandith))
+- **Ovindu Gunatunga ** - *Initial work* - https://github.com/yourusername](https://github.com/ovindumandith
 
 ---
 
