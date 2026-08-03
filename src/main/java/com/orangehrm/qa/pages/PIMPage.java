@@ -28,12 +28,19 @@ public class PIMPage extends BasePage {
     @FindBy(xpath = "//a[normalize-space()='Add Employee']")
     private WebElement addEmployeeNavLink;
 
-    /** First-name input on the Add Employee form. */
-    @FindBy(css = "input.orangehrm-firstname")
+    /**
+     * First-name input on the Add Employee form.
+     * The class {@code orangehrm-firstname} is on the wrapper div, not the input;
+     * the input itself is reliably targeted by its placeholder attribute.
+     */
+    @FindBy(css = "input[placeholder='First Name']")
     private WebElement firstNameField;
 
-    /** Last-name input on the Add Employee form. */
-    @FindBy(css = "input.orangehrm-lastname")
+    /**
+     * Last-name input on the Add Employee form.
+     * Same note as firstNameField — placeholder is more stable than wrapper class.
+     */
+    @FindBy(css = "input[placeholder='Last Name']")
     private WebElement lastNameField;
 
     /**
@@ -104,9 +111,14 @@ public class PIMPage extends BasePage {
      * Types the given first name into the First Name input field on the
      * Add Employee form.
      *
+     * <p>Waits for the field to be visible before typing, which also acts as
+     * a readiness gate after direct URL navigation to the Add Employee page.
+     *
      * @param firstName the first name to enter
      */
     public void enterFirstName(String firstName) {
+        // Explicit visibility wait doubles as a form-ready gate after direct navigation
+        wait.until(ExpectedConditions.visibilityOf(firstNameField));
         type(firstNameField, firstName);
     }
 
