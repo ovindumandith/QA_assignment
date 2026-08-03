@@ -2,7 +2,7 @@
 <testng-results ignored="0" total="7" passed="5" failed="1" skipped="1">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-08-03T15:28:01 IST" name="OrangeHRM QA Automation Suite" finished-at="2026-08-03T15:30:01 IST" duration-ms="119950">
+  <suite started-at="2026-08-03T15:36:04 IST" name="OrangeHRM QA Automation Suite" finished-at="2026-08-03T15:37:20 IST" duration-ms="76750">
     <groups>
       <group name="regression">
         <method signature="PIMTest.TC06_AddNewEmployeeTest()[pri:6, instance:com.orangehrm.qa.tests.PIMTest@4466af20]" name="TC06_AddNewEmployeeTest" class="com.orangehrm.qa.tests.PIMTest"/>
@@ -20,21 +20,21 @@
         <method signature="LoginTest.TC02_InvalidPasswordTest()[pri:2, instance:com.orangehrm.qa.tests.LoginTest@1a451d4d]" name="TC02_InvalidPasswordTest" class="com.orangehrm.qa.tests.LoginTest"/>
       </group> <!-- smoke -->
     </groups>
-    <test started-at="2026-08-03T15:28:01 IST" name="OrangeHRM Full Test Run" finished-at="2026-08-03T15:30:01 IST" duration-ms="119950">
+    <test started-at="2026-08-03T15:36:04 IST" name="OrangeHRM Full Test Run" finished-at="2026-08-03T15:37:20 IST" duration-ms="76750">
       <class name="com.orangehrm.qa.tests.LoginTest">
-        <test-method is-config="true" signature="beforeSuite()[pri:0, instance:com.orangehrm.qa.tests.LoginTest@1a451d4d]" started-at="2026-08-03T15:28:01 IST" name="beforeSuite" finished-at="2026-08-03T15:28:01 IST" duration-ms="181" status="PASS">
+        <test-method is-config="true" signature="beforeSuite()[pri:0, instance:com.orangehrm.qa.tests.LoginTest@1a451d4d]" started-at="2026-08-03T15:36:03 IST" name="beforeSuite" finished-at="2026-08-03T15:36:04 IST" duration-ms="160" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeSuite -->
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:com.orangehrm.qa.tests.LoginTest@1a451d4d]" started-at="2026-08-03T15:28:01 IST" name="beforeMethod" finished-at="2026-08-03T15:28:07 IST" duration-ms="6048" status="PASS">
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:com.orangehrm.qa.tests.LoginTest@1a451d4d]" started-at="2026-08-03T15:36:04 IST" name="beforeMethod" finished-at="2026-08-03T15:36:10 IST" duration-ms="6824" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method signature="TC01_ValidLoginTest()[pri:1, instance:com.orangehrm.qa.tests.LoginTest@1a451d4d]" started-at="2026-08-03T15:28:07 IST" name="TC01_ValidLoginTest" description="TC-01: Verify successful login with valid credentials" finished-at="2026-08-03T15:28:09 IST" duration-ms="2029" status="PASS">
+        <test-method signature="TC01_ValidLoginTest()[pri:1, instance:com.orangehrm.qa.tests.LoginTest@1a451d4d]" started-at="2026-08-03T15:36:10 IST" name="TC01_ValidLoginTest" description="TC-01: Verify successful login with valid credentials" finished-at="2026-08-03T15:36:13 IST" duration-ms="2428" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC01_ValidLoginTest -->
-        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.orangehrm.qa.tests.LoginTest@1a451d4d]" started-at="2026-08-03T15:28:09 IST" name="afterMethod" finished-at="2026-08-03T15:28:09 IST" duration-ms="336" status="PASS">
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.orangehrm.qa.tests.LoginTest@1a451d4d]" started-at="2026-08-03T15:36:13 IST" name="afterMethod" finished-at="2026-08-03T15:36:13 IST" duration-ms="396" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -45,15 +45,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:com.orangehrm.qa.tests.LoginTest@1a451d4d]" started-at="2026-08-03T15:28:09 IST" name="beforeMethod" finished-at="2026-08-03T15:28:15 IST" duration-ms="5449" status="PASS">
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:com.orangehrm.qa.tests.LoginTest@1a451d4d]" started-at="2026-08-03T15:36:13 IST" name="beforeMethod" finished-at="2026-08-03T15:36:18 IST" duration-ms="5092" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method signature="TC02_InvalidPasswordTest()[pri:2, instance:com.orangehrm.qa.tests.LoginTest@1a451d4d]" started-at="2026-08-03T15:28:15 IST" name="TC02_InvalidPasswordTest" description="TC-02: Verify error message with invalid password" finished-at="2026-08-03T15:28:21 IST" duration-ms="5943" status="PASS">
+        <test-method signature="TC02_InvalidPasswordTest()[pri:2, instance:com.orangehrm.qa.tests.LoginTest@1a451d4d]" started-at="2026-08-03T15:36:18 IST" name="TC02_InvalidPasswordTest" description="TC-02: Verify error message with invalid password" finished-at="2026-08-03T15:36:20 IST" duration-ms="1888" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC02_InvalidPasswordTest -->
-        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.orangehrm.qa.tests.LoginTest@1a451d4d]" started-at="2026-08-03T15:28:21 IST" name="afterMethod" finished-at="2026-08-03T15:28:21 IST" duration-ms="254" status="PASS">
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.orangehrm.qa.tests.LoginTest@1a451d4d]" started-at="2026-08-03T15:36:20 IST" name="afterMethod" finished-at="2026-08-03T15:36:21 IST" duration-ms="335" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -64,15 +64,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:com.orangehrm.qa.tests.LoginTest@1a451d4d]" started-at="2026-08-03T15:28:21 IST" name="beforeMethod" finished-at="2026-08-03T15:28:31 IST" duration-ms="9830" status="PASS">
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:com.orangehrm.qa.tests.LoginTest@1a451d4d]" started-at="2026-08-03T15:36:21 IST" name="beforeMethod" finished-at="2026-08-03T15:36:41 IST" duration-ms="20639" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method signature="TC03_EmptyUsernameTest()[pri:3, instance:com.orangehrm.qa.tests.LoginTest@1a451d4d]" started-at="2026-08-03T15:28:31 IST" name="TC03_EmptyUsernameTest" description="TC-03: Verify validation when username is empty" finished-at="2026-08-03T15:28:31 IST" duration-ms="302" status="PASS">
+        <test-method signature="TC03_EmptyUsernameTest()[pri:3, instance:com.orangehrm.qa.tests.LoginTest@1a451d4d]" started-at="2026-08-03T15:36:41 IST" name="TC03_EmptyUsernameTest" description="TC-03: Verify validation when username is empty" finished-at="2026-08-03T15:36:41 IST" duration-ms="231" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC03_EmptyUsernameTest -->
-        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.orangehrm.qa.tests.LoginTest@1a451d4d]" started-at="2026-08-03T15:28:31 IST" name="afterMethod" finished-at="2026-08-03T15:28:32 IST" duration-ms="450" status="PASS">
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.orangehrm.qa.tests.LoginTest@1a451d4d]" started-at="2026-08-03T15:36:41 IST" name="afterMethod" finished-at="2026-08-03T15:36:42 IST" duration-ms="430" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -83,15 +83,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:com.orangehrm.qa.tests.LoginTest@1a451d4d]" started-at="2026-08-03T15:28:32 IST" name="beforeMethod" finished-at="2026-08-03T15:28:43 IST" duration-ms="11127" status="PASS">
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:com.orangehrm.qa.tests.LoginTest@1a451d4d]" started-at="2026-08-03T15:36:42 IST" name="beforeMethod" finished-at="2026-08-03T15:36:49 IST" duration-ms="6871" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method signature="TC04_EmptyPasswordTest()[pri:4, instance:com.orangehrm.qa.tests.LoginTest@1a451d4d]" started-at="2026-08-03T15:28:43 IST" name="TC04_EmptyPasswordTest" description="TC-04: Verify validation when password is empty" finished-at="2026-08-03T15:28:43 IST" duration-ms="248" status="PASS">
+        <test-method signature="TC04_EmptyPasswordTest()[pri:4, instance:com.orangehrm.qa.tests.LoginTest@1a451d4d]" started-at="2026-08-03T15:36:49 IST" name="TC04_EmptyPasswordTest" description="TC-04: Verify validation when password is empty" finished-at="2026-08-03T15:36:49 IST" duration-ms="221" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC04_EmptyPasswordTest -->
-        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.orangehrm.qa.tests.LoginTest@1a451d4d]" started-at="2026-08-03T15:28:43 IST" name="afterMethod" finished-at="2026-08-03T15:28:43 IST" duration-ms="349" status="PASS">
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.orangehrm.qa.tests.LoginTest@1a451d4d]" started-at="2026-08-03T15:36:49 IST" name="afterMethod" finished-at="2026-08-03T15:36:49 IST" duration-ms="323" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -102,15 +102,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:com.orangehrm.qa.tests.LoginTest@1a451d4d]" started-at="2026-08-03T15:28:43 IST" name="beforeMethod" finished-at="2026-08-03T15:29:20 IST" duration-ms="36280" status="PASS">
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:com.orangehrm.qa.tests.LoginTest@1a451d4d]" started-at="2026-08-03T15:36:49 IST" name="beforeMethod" finished-at="2026-08-03T15:36:54 IST" duration-ms="5188" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method signature="TC05_BothFieldsEmptyTest()[pri:5, instance:com.orangehrm.qa.tests.LoginTest@1a451d4d]" started-at="2026-08-03T15:29:20 IST" name="TC05_BothFieldsEmptyTest" description="TC-05: Verify validation when both fields are empty" finished-at="2026-08-03T15:29:20 IST" duration-ms="184" status="PASS">
+        <test-method signature="TC05_BothFieldsEmptyTest()[pri:5, instance:com.orangehrm.qa.tests.LoginTest@1a451d4d]" started-at="2026-08-03T15:36:54 IST" name="TC05_BothFieldsEmptyTest" description="TC-05: Verify validation when both fields are empty" finished-at="2026-08-03T15:36:55 IST" duration-ms="139" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC05_BothFieldsEmptyTest -->
-        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.orangehrm.qa.tests.LoginTest@1a451d4d]" started-at="2026-08-03T15:29:20 IST" name="afterMethod" finished-at="2026-08-03T15:29:20 IST" duration-ms="457" status="PASS">
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.orangehrm.qa.tests.LoginTest@1a451d4d]" started-at="2026-08-03T15:36:55 IST" name="afterMethod" finished-at="2026-08-03T15:36:55 IST" duration-ms="280" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -121,37 +121,27 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="afterSuite()[pri:0, instance:com.orangehrm.qa.tests.LoginTest@1a451d4d]" started-at="2026-08-03T15:30:01 IST" name="afterSuite" finished-at="2026-08-03T15:30:01 IST" duration-ms="325" status="PASS">
+        <test-method is-config="true" signature="afterSuite()[pri:0, instance:com.orangehrm.qa.tests.LoginTest@1a451d4d]" started-at="2026-08-03T15:37:20 IST" name="afterSuite" finished-at="2026-08-03T15:37:21 IST" duration-ms="260" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterSuite -->
       </class> <!-- com.orangehrm.qa.tests.LoginTest -->
       <class name="com.orangehrm.qa.tests.PIMTest">
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:com.orangehrm.qa.tests.PIMTest@4466af20]" started-at="2026-08-03T15:29:20 IST" name="beforeMethod" finished-at="2026-08-03T15:29:27 IST" duration-ms="6261" status="PASS">
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:com.orangehrm.qa.tests.PIMTest@4466af20]" started-at="2026-08-03T15:36:55 IST" name="beforeMethod" finished-at="2026-08-03T15:37:01 IST" duration-ms="6537" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method signature="TC06_AddNewEmployeeTest()[pri:6, instance:com.orangehrm.qa.tests.PIMTest@4466af20]" started-at="2026-08-03T15:29:27 IST" name="TC06_AddNewEmployeeTest" description="TC-06: Verify new employee can be added" finished-at="2026-08-03T15:30:01 IST" duration-ms="33944" status="FAIL">
-          <exception class="org.openqa.selenium.TimeoutException">
+        <test-method signature="TC06_AddNewEmployeeTest()[pri:6, instance:com.orangehrm.qa.tests.PIMTest@4466af20]" started-at="2026-08-03T15:37:01 IST" name="TC06_AddNewEmployeeTest" description="TC-06: Verify new employee can be added" finished-at="2026-08-03T15:37:20 IST" duration-ms="18379" status="FAIL">
+          <exception class="java.lang.AssertionError">
             <message>
-              <![CDATA[Expected condition failed: waiting for visibility of element located by By.cssSelector: .oxd-toast-message-text (tried for 10 second(s) with 500 milliseconds interval)
-Build info: version: '4.18.1', revision: 'b1d3319b48'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.8'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 150.0.7871.187, chrome: {chromedriverVersion: 150.0.7871.124 (9261fd0a595..., userDataDir: C:\Users\Ovindu\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53732}, goog:processID: 17096, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53732/devtoo..., se:cdpVersion: 150.0.7871.187, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 269e11b95f57d2dfc593bd0a858fc374]]>
+              <![CDATA[Expected toast to contain 'Successfully Saved' but got: Success expected [true] but found [false]]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.cssSelector: .oxd-toast-message-text (tried for 10 second(s) with 500 milliseconds interval)
-Build info: version: '4.18.1', revision: 'b1d3319b48'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.8'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 150.0.7871.187, chrome: {chromedriverVersion: 150.0.7871.124 (9261fd0a595..., userDataDir: C:\Users\Ovindu\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53732}, goog:processID: 17096, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53732/devtoo..., se:cdpVersion: 150.0.7871.187, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 269e11b95f57d2dfc593bd0a858fc374
-at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
-at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
-at com.orangehrm.qa.pages.PIMPage.getSuccessToastMessage(PIMPage.java:167)
-at com.orangehrm.qa.tests.PIMTest.TC06_AddNewEmployeeTest(PIMTest.java:110)
+              <![CDATA[java.lang.AssertionError: Expected toast to contain 'Successfully Saved' but got: Success expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1578)
+at org.testng.Assert.assertTrue(Assert.java:57)
+at com.orangehrm.qa.tests.PIMTest.TC06_AddNewEmployeeTest(PIMTest.java:111)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
@@ -184,11 +174,11 @@ at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
 at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC06_AddNewEmployeeTest -->
-        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.orangehrm.qa.tests.PIMTest@4466af20]" started-at="2026-08-03T15:30:01 IST" name="afterMethod" finished-at="2026-08-03T15:30:01 IST" duration-ms="414" status="PASS">
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.orangehrm.qa.tests.PIMTest@4466af20]" started-at="2026-08-03T15:37:20 IST" name="afterMethod" finished-at="2026-08-03T15:37:20 IST" duration-ms="509" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -199,7 +189,7 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method signature="TC07_SearchExistingEmployeeTest()[pri:7, instance:com.orangehrm.qa.tests.PIMTest@4466af20]" started-at="2026-08-03T15:30:01 IST" name="TC07_SearchExistingEmployeeTest" description="TC-07: Verify employee search returns valid results" finished-at="2026-08-03T15:30:01 IST" depends-on-methods="com.orangehrm.qa.tests.PIMTest.TC06_AddNewEmployeeTest" duration-ms="0" status="SKIP">
+        <test-method signature="TC07_SearchExistingEmployeeTest()[pri:7, instance:com.orangehrm.qa.tests.PIMTest@4466af20]" started-at="2026-08-03T15:37:20 IST" name="TC07_SearchExistingEmployeeTest" description="TC-07: Verify employee search returns valid results" finished-at="2026-08-03T15:37:20 IST" depends-on-methods="com.orangehrm.qa.tests.PIMTest.TC06_AddNewEmployeeTest" duration-ms="0" status="SKIP">
           <exception class="java.lang.Throwable">
             <message>
               <![CDATA[Method com.orangehrm.qa.tests.PIMTest.TC07_SearchExistingEmployeeTest() on instance com.orangehrm.qa.tests.PIMTest@4466af20 depends on not successfully finished methods 

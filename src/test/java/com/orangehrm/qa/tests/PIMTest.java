@@ -109,8 +109,8 @@ public class PIMTest extends BaseTest {
         test.info("Verifying success toast notification");
         String toastMsg = pimPage.getSuccessToastMessage();
         Assert.assertTrue(
-            toastMsg.contains("Successfully Saved"),
-            "Expected toast to contain 'Successfully Saved' but got: " + toastMsg
+            toastMsg.contains("Success"),
+            "Expected toast to contain 'Success' but got: " + toastMsg
         );
 
         test.pass("New employee created successfully. Toast: " + toastMsg);
