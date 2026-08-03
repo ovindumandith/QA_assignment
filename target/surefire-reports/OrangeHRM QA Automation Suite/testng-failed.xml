@@ -5,7 +5,6 @@
     <classes>
       <class name="com.orangehrm.qa.tests.LoginTest">
         <methods>
-          <include name="TC02_InvalidPasswordTest"/>
           <include name="afterMethod"/>
           <include name="beforeSuite"/>
           <include name="afterSuite"/>

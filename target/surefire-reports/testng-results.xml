@@ -1,184 +1,108 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="7" passed="3" failed="2" skipped="2">
+<testng-results ignored="0" total="7" passed="4" failed="0" skipped="3">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-08-03T15:01:54 IST" name="OrangeHRM QA Automation Suite" finished-at="2026-08-03T15:04:48 IST" duration-ms="173889">
+  <suite started-at="2026-08-03T15:09:34 IST" name="OrangeHRM QA Automation Suite" finished-at="2026-08-03T15:10:38 IST" duration-ms="64731">
     <groups>
       <group name="regression">
-        <method signature="PIMTest.TC06_AddNewEmployeeTest()[pri:6, instance:com.orangehrm.qa.tests.PIMTest@158da8e]" name="TC06_AddNewEmployeeTest" class="com.orangehrm.qa.tests.PIMTest"/>
-        <method signature="PIMTest.TC07_SearchExistingEmployeeTest()[pri:7, instance:com.orangehrm.qa.tests.PIMTest@158da8e]" name="TC07_SearchExistingEmployeeTest" class="com.orangehrm.qa.tests.PIMTest"/>
-        <method signature="LoginTest.TC01_ValidLoginTest()[pri:1, instance:com.orangehrm.qa.tests.LoginTest@7fa98a66]" name="TC01_ValidLoginTest" class="com.orangehrm.qa.tests.LoginTest"/>
-        <method signature="LoginTest.TC02_InvalidPasswordTest()[pri:2, instance:com.orangehrm.qa.tests.LoginTest@7fa98a66]" name="TC02_InvalidPasswordTest" class="com.orangehrm.qa.tests.LoginTest"/>
-        <method signature="LoginTest.TC03_EmptyUsernameTest()[pri:3, instance:com.orangehrm.qa.tests.LoginTest@7fa98a66]" name="TC03_EmptyUsernameTest" class="com.orangehrm.qa.tests.LoginTest"/>
-        <method signature="LoginTest.TC04_EmptyPasswordTest()[pri:4, instance:com.orangehrm.qa.tests.LoginTest@7fa98a66]" name="TC04_EmptyPasswordTest" class="com.orangehrm.qa.tests.LoginTest"/>
-        <method signature="LoginTest.TC05_BothFieldsEmptyTest()[pri:5, instance:com.orangehrm.qa.tests.LoginTest@7fa98a66]" name="TC05_BothFieldsEmptyTest" class="com.orangehrm.qa.tests.LoginTest"/>
+        <method signature="PIMTest.TC06_AddNewEmployeeTest()[pri:6, instance:com.orangehrm.qa.tests.PIMTest@4466af20]" name="TC06_AddNewEmployeeTest" class="com.orangehrm.qa.tests.PIMTest"/>
+        <method signature="PIMTest.TC07_SearchExistingEmployeeTest()[pri:7, instance:com.orangehrm.qa.tests.PIMTest@4466af20]" name="TC07_SearchExistingEmployeeTest" class="com.orangehrm.qa.tests.PIMTest"/>
+        <method signature="LoginTest.TC01_ValidLoginTest()[pri:1, instance:com.orangehrm.qa.tests.LoginTest@1a451d4d]" name="TC01_ValidLoginTest" class="com.orangehrm.qa.tests.LoginTest"/>
+        <method signature="LoginTest.TC02_InvalidPasswordTest()[pri:2, instance:com.orangehrm.qa.tests.LoginTest@1a451d4d]" name="TC02_InvalidPasswordTest" class="com.orangehrm.qa.tests.LoginTest"/>
+        <method signature="LoginTest.TC03_EmptyUsernameTest()[pri:3, instance:com.orangehrm.qa.tests.LoginTest@1a451d4d]" name="TC03_EmptyUsernameTest" class="com.orangehrm.qa.tests.LoginTest"/>
+        <method signature="LoginTest.TC04_EmptyPasswordTest()[pri:4, instance:com.orangehrm.qa.tests.LoginTest@1a451d4d]" name="TC04_EmptyPasswordTest" class="com.orangehrm.qa.tests.LoginTest"/>
+        <method signature="LoginTest.TC05_BothFieldsEmptyTest()[pri:5, instance:com.orangehrm.qa.tests.LoginTest@1a451d4d]" name="TC05_BothFieldsEmptyTest" class="com.orangehrm.qa.tests.LoginTest"/>
       </group> <!-- regression -->
       <group name="smoke">
-        <method signature="PIMTest.TC06_AddNewEmployeeTest()[pri:6, instance:com.orangehrm.qa.tests.PIMTest@158da8e]" name="TC06_AddNewEmployeeTest" class="com.orangehrm.qa.tests.PIMTest"/>
-        <method signature="PIMTest.TC07_SearchExistingEmployeeTest()[pri:7, instance:com.orangehrm.qa.tests.PIMTest@158da8e]" name="TC07_SearchExistingEmployeeTest" class="com.orangehrm.qa.tests.PIMTest"/>
-        <method signature="LoginTest.TC01_ValidLoginTest()[pri:1, instance:com.orangehrm.qa.tests.LoginTest@7fa98a66]" name="TC01_ValidLoginTest" class="com.orangehrm.qa.tests.LoginTest"/>
-        <method signature="LoginTest.TC02_InvalidPasswordTest()[pri:2, instance:com.orangehrm.qa.tests.LoginTest@7fa98a66]" name="TC02_InvalidPasswordTest" class="com.orangehrm.qa.tests.LoginTest"/>
+        <method signature="PIMTest.TC06_AddNewEmployeeTest()[pri:6, instance:com.orangehrm.qa.tests.PIMTest@4466af20]" name="TC06_AddNewEmployeeTest" class="com.orangehrm.qa.tests.PIMTest"/>
+        <method signature="PIMTest.TC07_SearchExistingEmployeeTest()[pri:7, instance:com.orangehrm.qa.tests.PIMTest@4466af20]" name="TC07_SearchExistingEmployeeTest" class="com.orangehrm.qa.tests.PIMTest"/>
+        <method signature="LoginTest.TC01_ValidLoginTest()[pri:1, instance:com.orangehrm.qa.tests.LoginTest@1a451d4d]" name="TC01_ValidLoginTest" class="com.orangehrm.qa.tests.LoginTest"/>
+        <method signature="LoginTest.TC02_InvalidPasswordTest()[pri:2, instance:com.orangehrm.qa.tests.LoginTest@1a451d4d]" name="TC02_InvalidPasswordTest" class="com.orangehrm.qa.tests.LoginTest"/>
       </group> <!-- smoke -->
     </groups>
-    <test started-at="2026-08-03T15:01:54 IST" name="OrangeHRM Full Test Run" finished-at="2026-08-03T15:04:48 IST" duration-ms="173889">
+    <test started-at="2026-08-03T15:09:34 IST" name="OrangeHRM Full Test Run" finished-at="2026-08-03T15:10:38 IST" duration-ms="64731">
       <class name="com.orangehrm.qa.tests.LoginTest">
-        <test-method is-config="true" signature="beforeSuite()[pri:0, instance:com.orangehrm.qa.tests.LoginTest@7fa98a66]" started-at="2026-08-03T15:01:54 IST" name="beforeSuite" finished-at="2026-08-03T15:01:54 IST" duration-ms="182" status="PASS">
+        <test-method is-config="true" signature="beforeSuite()[pri:0, instance:com.orangehrm.qa.tests.LoginTest@1a451d4d]" started-at="2026-08-03T15:09:34 IST" name="beforeSuite" finished-at="2026-08-03T15:09:34 IST" duration-ms="176" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeSuite -->
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:com.orangehrm.qa.tests.LoginTest@7fa98a66]" started-at="2026-08-03T15:01:54 IST" name="beforeMethod" finished-at="2026-08-03T15:02:04 IST" duration-ms="10193" status="PASS">
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:com.orangehrm.qa.tests.LoginTest@1a451d4d]" started-at="2026-08-03T15:09:34 IST" name="beforeMethod" finished-at="2026-08-03T15:09:41 IST" duration-ms="7434" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method signature="TC01_ValidLoginTest()[pri:1, instance:com.orangehrm.qa.tests.LoginTest@7fa98a66]" started-at="2026-08-03T15:02:04 IST" name="TC01_ValidLoginTest" description="TC-01: Verify successful login with valid credentials" finished-at="2026-08-03T15:02:14 IST" duration-ms="9631" status="PASS">
+        <test-method signature="TC01_ValidLoginTest()[pri:1, instance:com.orangehrm.qa.tests.LoginTest@1a451d4d]" started-at="2026-08-03T15:09:41 IST" name="TC01_ValidLoginTest" description="TC-01: Verify successful login with valid credentials" finished-at="2026-08-03T15:09:43 IST" duration-ms="1864" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC01_ValidLoginTest -->
-        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.orangehrm.qa.tests.LoginTest@7fa98a66]" started-at="2026-08-03T15:02:14 IST" name="afterMethod" finished-at="2026-08-03T15:02:14 IST" duration-ms="329" status="PASS">
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.orangehrm.qa.tests.LoginTest@1a451d4d]" started-at="2026-08-03T15:09:43 IST" name="afterMethod" finished-at="2026-08-03T15:09:44 IST" duration-ms="453" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=TC01_ValidLoginTest status=SUCCESS method=LoginTest.TC01_ValidLoginTest()[pri:1, instance:com.orangehrm.qa.tests.LoginTest@7fa98a66] output={null}]]]>
+                <![CDATA[[TestResult name=TC01_ValidLoginTest status=SUCCESS method=LoginTest.TC01_ValidLoginTest()[pri:1, instance:com.orangehrm.qa.tests.LoginTest@1a451d4d] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:com.orangehrm.qa.tests.LoginTest@7fa98a66]" started-at="2026-08-03T15:02:14 IST" name="beforeMethod" finished-at="2026-08-03T15:02:24 IST" duration-ms="9749" status="PASS">
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:com.orangehrm.qa.tests.LoginTest@1a451d4d]" started-at="2026-08-03T15:09:44 IST" name="beforeMethod" finished-at="2026-08-03T15:09:50 IST" duration-ms="5999" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method signature="TC02_InvalidPasswordTest()[pri:2, instance:com.orangehrm.qa.tests.LoginTest@7fa98a66]" started-at="2026-08-03T15:02:24 IST" name="TC02_InvalidPasswordTest" description="TC-02: Verify error message with invalid password" finished-at="2026-08-03T15:02:54 IST" duration-ms="30611" status="FAIL">
-          <exception class="org.openqa.selenium.TimeoutException">
-            <message>
-              <![CDATA[Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.name: username' (tried for 15 second(s) with 500 milliseconds interval)]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.name: username' (tried for 15 second(s) with 500 milliseconds interval)
-at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
-at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
-at com.orangehrm.qa.pages.BasePage.type(BasePage.java:72)
-at com.orangehrm.qa.pages.LoginPage.enterUsername(LoginPage.java:80)
-at com.orangehrm.qa.pages.LoginPage.login(LoginPage.java:107)
-at com.orangehrm.qa.tests.LoginTest.TC02_InvalidPasswordTest(LoginTest.java:86)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-at org.testng.TestRunner.privateRun(TestRunner.java:819)
-at org.testng.TestRunner.run(TestRunner.java:619)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
-at org.testng.SuiteRunner.run(SuiteRunner.java:336)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
-at org.testng.TestNG.runSuites(TestNG.java:1134)
-at org.testng.TestNG.run(TestNG.java:1101)
-at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
-at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
-at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
-at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
-at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
-at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
-at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
-Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"*[name='username']"}
-  (Session info: chrome=150.0.7871.187)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: '4.18.1', revision: 'b1d3319b48'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.8'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [22c8044a1842a46bdf6263fee9c08223, findElement {using=name, value=username}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 150.0.7871.187, chrome: {chromedriverVersion: 150.0.7871.124 (9261fd0a595..., userDataDir: C:\Users\Ovindu\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63379}, goog:processID: 23248, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63379/devtoo..., se:cdpVersion: 150.0.7871.187, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 22c8044a1842a46bdf6263fee9c08223
-at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
-at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:519)
-at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:356)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:350)
-at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-at jdk.proxy2/jdk.proxy2.$Proxy13.isDisplayed(Unknown Source)
-at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:304)
-at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290)
-at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:287)
-at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
-... 34 more
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.TimeoutException -->
+        <test-method signature="TC02_InvalidPasswordTest()[pri:2, instance:com.orangehrm.qa.tests.LoginTest@1a451d4d]" started-at="2026-08-03T15:09:50 IST" name="TC02_InvalidPasswordTest" description="TC-02: Verify error message with invalid password" finished-at="2026-08-03T15:09:51 IST" duration-ms="1575" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC02_InvalidPasswordTest -->
-        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.orangehrm.qa.tests.LoginTest@7fa98a66]" started-at="2026-08-03T15:02:54 IST" name="afterMethod" finished-at="2026-08-03T15:02:55 IST" duration-ms="563" status="PASS">
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.orangehrm.qa.tests.LoginTest@1a451d4d]" started-at="2026-08-03T15:09:51 IST" name="afterMethod" finished-at="2026-08-03T15:09:51 IST" duration-ms="278" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=TC02_InvalidPasswordTest status=FAILURE method=LoginTest.TC02_InvalidPasswordTest()[pri:2, instance:com.orangehrm.qa.tests.LoginTest@7fa98a66] output={null}]]]>
+                <![CDATA[[TestResult name=TC02_InvalidPasswordTest status=SUCCESS method=LoginTest.TC02_InvalidPasswordTest()[pri:2, instance:com.orangehrm.qa.tests.LoginTest@1a451d4d] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:com.orangehrm.qa.tests.LoginTest@7fa98a66]" started-at="2026-08-03T15:02:55 IST" name="beforeMethod" finished-at="2026-08-03T15:03:56 IST" duration-ms="61400" status="PASS">
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:com.orangehrm.qa.tests.LoginTest@1a451d4d]" started-at="2026-08-03T15:09:51 IST" name="beforeMethod" finished-at="2026-08-03T15:10:06 IST" duration-ms="14982" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method signature="TC03_EmptyUsernameTest()[pri:3, instance:com.orangehrm.qa.tests.LoginTest@7fa98a66]" started-at="2026-08-03T15:03:56 IST" name="TC03_EmptyUsernameTest" description="TC-03: Verify validation when username is empty" finished-at="2026-08-03T15:03:56 IST" duration-ms="258" status="PASS">
+        <test-method signature="TC03_EmptyUsernameTest()[pri:3, instance:com.orangehrm.qa.tests.LoginTest@1a451d4d]" started-at="2026-08-03T15:10:06 IST" name="TC03_EmptyUsernameTest" description="TC-03: Verify validation when username is empty" finished-at="2026-08-03T15:10:07 IST" duration-ms="261" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC03_EmptyUsernameTest -->
-        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.orangehrm.qa.tests.LoginTest@7fa98a66]" started-at="2026-08-03T15:03:56 IST" name="afterMethod" finished-at="2026-08-03T15:03:57 IST" duration-ms="410" status="PASS">
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.orangehrm.qa.tests.LoginTest@1a451d4d]" started-at="2026-08-03T15:10:07 IST" name="afterMethod" finished-at="2026-08-03T15:10:07 IST" duration-ms="354" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=TC03_EmptyUsernameTest status=SUCCESS method=LoginTest.TC03_EmptyUsernameTest()[pri:3, instance:com.orangehrm.qa.tests.LoginTest@7fa98a66] output={null}]]]>
+                <![CDATA[[TestResult name=TC03_EmptyUsernameTest status=SUCCESS method=LoginTest.TC03_EmptyUsernameTest()[pri:3, instance:com.orangehrm.qa.tests.LoginTest@1a451d4d] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:com.orangehrm.qa.tests.LoginTest@7fa98a66]" started-at="2026-08-03T15:03:57 IST" name="beforeMethod" finished-at="2026-08-03T15:04:04 IST" duration-ms="6795" status="PASS">
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:com.orangehrm.qa.tests.LoginTest@1a451d4d]" started-at="2026-08-03T15:10:07 IST" name="beforeMethod" finished-at="2026-08-03T15:10:19 IST" duration-ms="11677" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method signature="TC04_EmptyPasswordTest()[pri:4, instance:com.orangehrm.qa.tests.LoginTest@7fa98a66]" started-at="2026-08-03T15:04:04 IST" name="TC04_EmptyPasswordTest" description="TC-04: Verify validation when password is empty" finished-at="2026-08-03T15:04:04 IST" duration-ms="251" status="PASS">
+        <test-method signature="TC04_EmptyPasswordTest()[pri:4, instance:com.orangehrm.qa.tests.LoginTest@1a451d4d]" started-at="2026-08-03T15:10:19 IST" name="TC04_EmptyPasswordTest" description="TC-04: Verify validation when password is empty" finished-at="2026-08-03T15:10:19 IST" duration-ms="210" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC04_EmptyPasswordTest -->
-        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.orangehrm.qa.tests.LoginTest@7fa98a66]" started-at="2026-08-03T15:04:04 IST" name="afterMethod" finished-at="2026-08-03T15:04:04 IST" duration-ms="327" status="PASS">
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.orangehrm.qa.tests.LoginTest@1a451d4d]" started-at="2026-08-03T15:10:19 IST" name="afterMethod" finished-at="2026-08-03T15:10:19 IST" duration-ms="372" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=TC04_EmptyPasswordTest status=SUCCESS method=LoginTest.TC04_EmptyPasswordTest()[pri:4, instance:com.orangehrm.qa.tests.LoginTest@7fa98a66] output={null}]]]>
+                <![CDATA[[TestResult name=TC04_EmptyPasswordTest status=SUCCESS method=LoginTest.TC04_EmptyPasswordTest()[pri:4, instance:com.orangehrm.qa.tests.LoginTest@1a451d4d] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:com.orangehrm.qa.tests.LoginTest@7fa98a66]" started-at="2026-08-03T15:04:04 IST" name="beforeMethod" finished-at="2026-08-03T15:04:14 IST" duration-ms="9380" status="FAIL">
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:com.orangehrm.qa.tests.LoginTest@1a451d4d]" started-at="2026-08-03T15:10:19 IST" name="beforeMethod" finished-at="2026-08-03T15:10:28 IST" duration-ms="9215" status="FAIL">
           <exception class="org.openqa.selenium.WebDriverException">
             <message>
               <![CDATA[unknown error: net::ERR_CONNECTION_REFUSED
@@ -186,9 +110,9 @@ at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
 Build info: version: '4.18.1', revision: 'b1d3319b48'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.8'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [db351006692e40b01a9141d59266281b, get {url=https://opensource-demo.orangehrmlive.com/web/index.php/auth/login}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 150.0.7871.187, chrome: {chromedriverVersion: 150.0.7871.124 (9261fd0a595..., userDataDir: C:\Users\Ovindu\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63324}, goog:processID: 21492, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63324/devtoo..., se:cdpVersion: 150.0.7871.187, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: db351006692e40b01a9141d59266281b]]>
+Command: [f395b94db8a9d23b4f908eb8243fe8a1, get {url=https://opensource-demo.orangehrmlive.com/web/index.php/auth/login}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 150.0.7871.187, chrome: {chromedriverVersion: 150.0.7871.124 (9261fd0a595..., userDataDir: C:\Users\Ovindu\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53715}, goog:processID: 20232, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53715/devtoo..., se:cdpVersion: 150.0.7871.187, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: f395b94db8a9d23b4f908eb8243fe8a1]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.openqa.selenium.WebDriverException: unknown error: net::ERR_CONNECTION_REFUSED
@@ -196,9 +120,9 @@ Session ID: db351006692e40b01a9141d59266281b]]>
 Build info: version: '4.18.1', revision: 'b1d3319b48'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.8'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [db351006692e40b01a9141d59266281b, get {url=https://opensource-demo.orangehrmlive.com/web/index.php/auth/login}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 150.0.7871.187, chrome: {chromedriverVersion: 150.0.7871.124 (9261fd0a595..., userDataDir: C:\Users\Ovindu\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63324}, goog:processID: 21492, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63324/devtoo..., se:cdpVersion: 150.0.7871.187, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: db351006692e40b01a9141d59266281b
+Command: [f395b94db8a9d23b4f908eb8243fe8a1, get {url=https://opensource-demo.orangehrmlive.com/web/index.php/auth/login}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 150.0.7871.187, chrome: {chromedriverVersion: 150.0.7871.124 (9261fd0a595..., userDataDir: C:\Users\Ovindu\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53715}, goog:processID: 20232, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53715/devtoo..., se:cdpVersion: 150.0.7871.187, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: f395b94db8a9d23b4f908eb8243fe8a1
 at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
 at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
 at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
@@ -210,7 +134,7 @@ at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(Driver
 at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
 at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:519)
 at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:301)
-at com.orangehrm.qa.tests.BaseTest.beforeMethod(BaseTest.java:84)
+at com.orangehrm.qa.tests.BaseTest.beforeMethod(BaseTest.java:86)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
@@ -251,7 +175,7 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method signature="TC05_BothFieldsEmptyTest()[pri:5, instance:com.orangehrm.qa.tests.LoginTest@7fa98a66]" started-at="2026-08-03T15:04:14 IST" name="TC05_BothFieldsEmptyTest" description="TC-05: Verify validation when both fields are empty" finished-at="2026-08-03T15:04:14 IST" duration-ms="1" status="SKIP">
+        <test-method signature="TC05_BothFieldsEmptyTest()[pri:5, instance:com.orangehrm.qa.tests.LoginTest@1a451d4d]" started-at="2026-08-03T15:10:28 IST" name="TC05_BothFieldsEmptyTest" description="TC-05: Verify validation when both fields are empty" finished-at="2026-08-03T15:10:28 IST" duration-ms="0" status="SKIP">
           <exception class="org.openqa.selenium.WebDriverException">
             <message>
               <![CDATA[unknown error: net::ERR_CONNECTION_REFUSED
@@ -259,9 +183,9 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
 Build info: version: '4.18.1', revision: 'b1d3319b48'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.8'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [db351006692e40b01a9141d59266281b, get {url=https://opensource-demo.orangehrmlive.com/web/index.php/auth/login}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 150.0.7871.187, chrome: {chromedriverVersion: 150.0.7871.124 (9261fd0a595..., userDataDir: C:\Users\Ovindu\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63324}, goog:processID: 21492, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63324/devtoo..., se:cdpVersion: 150.0.7871.187, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: db351006692e40b01a9141d59266281b]]>
+Command: [f395b94db8a9d23b4f908eb8243fe8a1, get {url=https://opensource-demo.orangehrmlive.com/web/index.php/auth/login}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 150.0.7871.187, chrome: {chromedriverVersion: 150.0.7871.124 (9261fd0a595..., userDataDir: C:\Users\Ovindu\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53715}, goog:processID: 20232, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53715/devtoo..., se:cdpVersion: 150.0.7871.187, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: f395b94db8a9d23b4f908eb8243fe8a1]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.openqa.selenium.WebDriverException: unknown error: net::ERR_CONNECTION_REFUSED
@@ -269,9 +193,9 @@ Session ID: db351006692e40b01a9141d59266281b]]>
 Build info: version: '4.18.1', revision: 'b1d3319b48'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.8'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [db351006692e40b01a9141d59266281b, get {url=https://opensource-demo.orangehrmlive.com/web/index.php/auth/login}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 150.0.7871.187, chrome: {chromedriverVersion: 150.0.7871.124 (9261fd0a595..., userDataDir: C:\Users\Ovindu\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63324}, goog:processID: 21492, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63324/devtoo..., se:cdpVersion: 150.0.7871.187, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: db351006692e40b01a9141d59266281b
+Command: [f395b94db8a9d23b4f908eb8243fe8a1, get {url=https://opensource-demo.orangehrmlive.com/web/index.php/auth/login}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 150.0.7871.187, chrome: {chromedriverVersion: 150.0.7871.124 (9261fd0a595..., userDataDir: C:\Users\Ovindu\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53715}, goog:processID: 20232, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53715/devtoo..., se:cdpVersion: 150.0.7871.187, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: f395b94db8a9d23b4f908eb8243fe8a1
 at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
 at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
 at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
@@ -283,7 +207,7 @@ at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(Driver
 at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
 at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:519)
 at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:301)
-at com.orangehrm.qa.tests.BaseTest.beforeMethod(BaseTest.java:84)
+at com.orangehrm.qa.tests.BaseTest.beforeMethod(BaseTest.java:86)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
@@ -324,42 +248,64 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC05_BothFieldsEmptyTest -->
-        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.orangehrm.qa.tests.LoginTest@7fa98a66]" started-at="2026-08-03T15:04:14 IST" name="afterMethod" finished-at="2026-08-03T15:04:14 IST" duration-ms="370" status="PASS">
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.orangehrm.qa.tests.LoginTest@1a451d4d]" started-at="2026-08-03T15:10:28 IST" name="afterMethod" finished-at="2026-08-03T15:10:29 IST" duration-ms="354" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=TC05_BothFieldsEmptyTest status=SKIP method=LoginTest.TC05_BothFieldsEmptyTest()[pri:5, instance:com.orangehrm.qa.tests.LoginTest@7fa98a66] output={null}]]]>
+                <![CDATA[[TestResult name=TC05_BothFieldsEmptyTest status=SKIP method=LoginTest.TC05_BothFieldsEmptyTest()[pri:5, instance:com.orangehrm.qa.tests.LoginTest@1a451d4d] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="afterSuite()[pri:0, instance:com.orangehrm.qa.tests.LoginTest@7fa98a66]" started-at="2026-08-03T15:04:48 IST" name="afterSuite" finished-at="2026-08-03T15:04:48 IST" duration-ms="283" status="PASS">
+        <test-method is-config="true" signature="afterSuite()[pri:0, instance:com.orangehrm.qa.tests.LoginTest@1a451d4d]" started-at="2026-08-03T15:10:39 IST" name="afterSuite" finished-at="2026-08-03T15:10:39 IST" duration-ms="375" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterSuite -->
       </class> <!-- com.orangehrm.qa.tests.LoginTest -->
       <class name="com.orangehrm.qa.tests.PIMTest">
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:com.orangehrm.qa.tests.PIMTest@158da8e]" started-at="2026-08-03T15:04:14 IST" name="beforeMethod" finished-at="2026-08-03T15:04:27 IST" duration-ms="13288" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method signature="TC06_AddNewEmployeeTest()[pri:6, instance:com.orangehrm.qa.tests.PIMTest@158da8e]" started-at="2026-08-03T15:04:27 IST" name="TC06_AddNewEmployeeTest" description="TC-06: Verify new employee can be added" finished-at="2026-08-03T15:04:47 IST" duration-ms="19536" status="FAIL">
-          <exception class="java.lang.AssertionError">
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:com.orangehrm.qa.tests.PIMTest@4466af20]" started-at="2026-08-03T15:10:29 IST" name="beforeMethod" finished-at="2026-08-03T15:10:38 IST" duration-ms="9317" status="FAIL">
+          <exception class="org.openqa.selenium.WebDriverException">
             <message>
-              <![CDATA[Expected toast to contain 'Successfully Saved' but got: Error expected [true] but found [false]]]>
+              <![CDATA[unknown error: net::ERR_CONNECTION_REFUSED
+  (Session info: chrome=150.0.7871.187)
+Build info: version: '4.18.1', revision: 'b1d3319b48'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.8'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [85b980aee191aff3992e2f8c57f2855d, get {url=https://opensource-demo.orangehrmlive.com/web/index.php/auth/login}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 150.0.7871.187, chrome: {chromedriverVersion: 150.0.7871.124 (9261fd0a595..., userDataDir: C:\Users\Ovindu\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63541}, goog:processID: 20140, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63541/devtoo..., se:cdpVersion: 150.0.7871.187, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 85b980aee191aff3992e2f8c57f2855d]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: Expected toast to contain 'Successfully Saved' but got: Error expected [true] but found [false]
-at org.testng.Assert.fail(Assert.java:111)
-at org.testng.Assert.failNotEquals(Assert.java:1578)
-at org.testng.Assert.assertTrue(Assert.java:57)
-at com.orangehrm.qa.tests.PIMTest.TC06_AddNewEmployeeTest(PIMTest.java:100)
+              <![CDATA[org.openqa.selenium.WebDriverException: unknown error: net::ERR_CONNECTION_REFUSED
+  (Session info: chrome=150.0.7871.187)
+Build info: version: '4.18.1', revision: 'b1d3319b48'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.8'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [85b980aee191aff3992e2f8c57f2855d, get {url=https://opensource-demo.orangehrmlive.com/web/index.php/auth/login}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 150.0.7871.187, chrome: {chromedriverVersion: 150.0.7871.124 (9261fd0a595..., userDataDir: C:\Users\Ovindu\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63541}, goog:processID: 20140, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63541/devtoo..., se:cdpVersion: 150.0.7871.187, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 85b980aee191aff3992e2f8c57f2855d
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:519)
+at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:301)
+at com.orangehrm.qa.tests.BaseTest.beforeMethod(BaseTest.java:86)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:393)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:326)
+at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:810)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:578)
 at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
 at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
 at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
@@ -388,30 +334,103 @@ at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
 at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="TC06_AddNewEmployeeTest()[pri:6, instance:com.orangehrm.qa.tests.PIMTest@4466af20]" started-at="2026-08-03T15:10:38 IST" name="TC06_AddNewEmployeeTest" description="TC-06: Verify new employee can be added" finished-at="2026-08-03T15:10:38 IST" duration-ms="0" status="SKIP">
+          <exception class="org.openqa.selenium.WebDriverException">
+            <message>
+              <![CDATA[unknown error: net::ERR_CONNECTION_REFUSED
+  (Session info: chrome=150.0.7871.187)
+Build info: version: '4.18.1', revision: 'b1d3319b48'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.8'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [85b980aee191aff3992e2f8c57f2855d, get {url=https://opensource-demo.orangehrmlive.com/web/index.php/auth/login}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 150.0.7871.187, chrome: {chromedriverVersion: 150.0.7871.124 (9261fd0a595..., userDataDir: C:\Users\Ovindu\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63541}, goog:processID: 20140, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63541/devtoo..., se:cdpVersion: 150.0.7871.187, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 85b980aee191aff3992e2f8c57f2855d]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.WebDriverException: unknown error: net::ERR_CONNECTION_REFUSED
+  (Session info: chrome=150.0.7871.187)
+Build info: version: '4.18.1', revision: 'b1d3319b48'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.8'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [85b980aee191aff3992e2f8c57f2855d, get {url=https://opensource-demo.orangehrmlive.com/web/index.php/auth/login}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 150.0.7871.187, chrome: {chromedriverVersion: 150.0.7871.124 (9261fd0a595..., userDataDir: C:\Users\Ovindu\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63541}, goog:processID: 20140, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63541/devtoo..., se:cdpVersion: 150.0.7871.187, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 85b980aee191aff3992e2f8c57f2855d
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:519)
+at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:301)
+at com.orangehrm.qa.tests.BaseTest.beforeMethod(BaseTest.java:86)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:393)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:326)
+at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:810)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:578)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:819)
+at org.testng.TestRunner.run(TestRunner.java:619)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
+at org.testng.TestNG.runSuites(TestNG.java:1134)
+at org.testng.TestNG.run(TestNG.java:1101)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC06_AddNewEmployeeTest -->
-        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.orangehrm.qa.tests.PIMTest@158da8e]" started-at="2026-08-03T15:04:47 IST" name="afterMethod" finished-at="2026-08-03T15:04:48 IST" duration-ms="747" status="PASS">
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.orangehrm.qa.tests.PIMTest@4466af20]" started-at="2026-08-03T15:10:38 IST" name="afterMethod" finished-at="2026-08-03T15:10:38 IST" duration-ms="341" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=TC06_AddNewEmployeeTest status=FAILURE method=PIMTest.TC06_AddNewEmployeeTest()[pri:6, instance:com.orangehrm.qa.tests.PIMTest@158da8e] output={null}]]]>
+                <![CDATA[[TestResult name=TC06_AddNewEmployeeTest status=SKIP method=PIMTest.TC06_AddNewEmployeeTest()[pri:6, instance:com.orangehrm.qa.tests.PIMTest@4466af20] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method signature="TC07_SearchExistingEmployeeTest()[pri:7, instance:com.orangehrm.qa.tests.PIMTest@158da8e]" started-at="2026-08-03T15:04:48 IST" name="TC07_SearchExistingEmployeeTest" description="TC-07: Verify employee search returns valid results" finished-at="2026-08-03T15:04:48 IST" depends-on-methods="com.orangehrm.qa.tests.PIMTest.TC06_AddNewEmployeeTest" duration-ms="0" status="SKIP">
+        <test-method signature="TC07_SearchExistingEmployeeTest()[pri:7, instance:com.orangehrm.qa.tests.PIMTest@4466af20]" started-at="2026-08-03T15:10:38 IST" name="TC07_SearchExistingEmployeeTest" description="TC-07: Verify employee search returns valid results" finished-at="2026-08-03T15:10:38 IST" depends-on-methods="com.orangehrm.qa.tests.PIMTest.TC06_AddNewEmployeeTest" duration-ms="0" status="SKIP">
           <exception class="java.lang.Throwable">
             <message>
-              <![CDATA[Method com.orangehrm.qa.tests.PIMTest.TC07_SearchExistingEmployeeTest() on instance com.orangehrm.qa.tests.PIMTest@158da8e depends on not successfully finished methods 
-[com.orangehrm.qa.tests.PIMTest.TC06_AddNewEmployeeTest() on instance com.orangehrm.qa.tests.PIMTest@158da8e]]]>
+              <![CDATA[Method com.orangehrm.qa.tests.PIMTest.TC07_SearchExistingEmployeeTest() on instance com.orangehrm.qa.tests.PIMTest@4466af20 depends on not successfully finished methods 
+[com.orangehrm.qa.tests.PIMTest.TC06_AddNewEmployeeTest() on instance com.orangehrm.qa.tests.PIMTest@4466af20]]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.Throwable: Method com.orangehrm.qa.tests.PIMTest.TC07_SearchExistingEmployeeTest() on instance com.orangehrm.qa.tests.PIMTest@158da8e depends on not successfully finished methods 
-[com.orangehrm.qa.tests.PIMTest.TC06_AddNewEmployeeTest() on instance com.orangehrm.qa.tests.PIMTest@158da8e]
+              <![CDATA[java.lang.Throwable: Method com.orangehrm.qa.tests.PIMTest.TC07_SearchExistingEmployeeTest() on instance com.orangehrm.qa.tests.PIMTest@4466af20 depends on not successfully finished methods 
+[com.orangehrm.qa.tests.PIMTest.TC06_AddNewEmployeeTest() on instance com.orangehrm.qa.tests.PIMTest@4466af20]
 at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:157)
 at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
 at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)

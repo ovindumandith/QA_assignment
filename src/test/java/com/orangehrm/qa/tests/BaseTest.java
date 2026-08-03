@@ -7,6 +7,7 @@ import com.orangehrm.qa.utils.DriverManager;
 import com.orangehrm.qa.utils.ExtentReportManager;
 import com.orangehrm.qa.utils.ScreenshotUtil;
 import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.ITestResult;
@@ -79,14 +80,38 @@ public abstract class BaseTest {
      * <p>Rather than a fixed sleep, an explicit wait polls until the login
      * username field is visible (up to 30 s). This handles both fast and slow
      * loads of the React SPA without wasting time on fast machines.
+     *
+     * <p>The navigation is retried up to 3 times with increasing back-off delays
+     * (5 s, then 10 s) to tolerate the transient connection refusals that the
+     * shared OrangeHRM demo server occasionally produces under load.
      */
     @BeforeMethod(alwaysRun = true)
     public void beforeMethod() {
         DriverManager.initDriver();
-        DriverManager.getDriver().get(ConfigReader.get("base.url"));
-        // Wait for the SPA to render the login form — more reliable than Thread.sleep
-        new WebDriverWait(DriverManager.getDriver(), Duration.ofSeconds(30))
-                .until(ExpectedConditions.visibilityOfElementLocated(By.name("username")));
+        WebDriver driver = DriverManager.getDriver();
+        String url = ConfigReader.get("base.url");
+
+        Exception lastException = null;
+        for (int attempt = 1; attempt <= 3; attempt++) {
+            try {
+                driver.get(url);
+                new WebDriverWait(driver, Duration.ofSeconds(30))
+                        .until(ExpectedConditions.visibilityOfElementLocated(By.name("username")));
+                return; // success — exit the retry loop
+            } catch (Exception e) {
+                lastException = e;
+                if (attempt < 3) {
+                    try {
+                        Thread.sleep(5000L * attempt); // 5 s after attempt 1, 10 s after attempt 2
+                    } catch (InterruptedException ie) {
+                        Thread.currentThread().interrupt();
+                    }
+                }
+            }
+        }
+        throw new RuntimeException(
+                "Login page did not load after 3 attempts. Last error: " + lastException.getMessage(),
+                lastException);
     }
 
     /**
