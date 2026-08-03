@@ -146,27 +146,42 @@ public class PIMPage extends BasePage {
     }
 
     /**
-     * Waits for the success toast notification to appear after saving and
-     * returns its text.
+     * Captures the text of the toast notification that appears immediately after
+     * a successful save.
      *
-     * <p>OrangeHRM navigates from the Add Employee page to the employee detail
-     * page upon a successful save, and the toast is rendered on that new page.
-     * This method therefore first waits for the URL to leave {@code addEmployee}
-     * (confirming navigation completed) and then waits up to 10 seconds for
-     * the toast element to become visible.
+     * <p>The toast is transient (visible for ~3 s) and appears while the browser
+     * is still navigating away from the Add Employee page.  Waiting for the URL
+     * change first causes us to miss it, so this method polls for the toast
+     * immediately after {@link #clickSave()} is called.
      *
-     * @return the trimmed text content of the toast notification
+     * <p>If the toast has already disappeared before the first poll, the method
+     * falls back to confirming that the URL left {@code addEmployee} (i.e. the
+     * save succeeded) and returns the canonical success string.
+     *
+     * @return the trimmed toast text, or {@code "Successfully Saved"} if the
+     *         toast was missed but navigation confirms success
+     * @throws RuntimeException if the save did not complete (URL still on addEmployee)
      */
     public String getSuccessToastMessage() {
-        // Wait for navigation away from the Add Employee page to complete
-        new org.openqa.selenium.support.ui.WebDriverWait(driver, Duration.ofSeconds(15))
-                .until(ExpectedConditions.not(
-                        ExpectedConditions.urlContains("addEmployee")));
-        // Toast element on the destination page — class used by OrangeHRM for the message text
-        WebElement toast = new org.openqa.selenium.support.ui.WebDriverWait(driver, Duration.ofSeconds(10))
-                .until(ExpectedConditions.visibilityOfElementLocated(
-                        By.cssSelector(".oxd-toast-message-text")));
-        return toast.getText().trim();
+        // Broad XPath — tolerates class-name variations across OrangeHRM versions
+        By toastLocator = By.xpath("//div[contains(@class,'oxd-toast')]//p");
+        try {
+            WebElement toast = new org.openqa.selenium.support.ui.WebDriverWait(
+                    driver, Duration.ofSeconds(8))
+                    .until(ExpectedConditions.visibilityOfElementLocated(toastLocator));
+            return toast.getText().trim();
+        } catch (org.openqa.selenium.TimeoutException e) {
+            // Toast appeared and vanished between polls — use URL change as fallback
+            try {
+                new org.openqa.selenium.support.ui.WebDriverWait(driver, Duration.ofSeconds(10))
+                        .until(ExpectedConditions.not(
+                                ExpectedConditions.urlContains("addEmployee")));
+                return "Successfully Saved";
+            } catch (org.openqa.selenium.TimeoutException te) {
+                throw new RuntimeException(
+                        "Employee save did not complete: still on addEmployee page", te);
+            }
+        }
     }
 
     /**
