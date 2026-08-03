@@ -46,10 +46,12 @@ public class PIMPage extends BasePage {
     /**
      * Employee ID input on the Add Employee form.
      *
-     * <p>Uses {@code normalize-space()} so the XPath matches regardless of
-     * whitespace differences in the rendered label text.
+     * <p>{@code following::input[1]} selects the first {@code <input>} element
+     * that appears after the "Employee Id" label anywhere in document order.
+     * This is structure-agnostic and works regardless of how many wrapper divs
+     * OrangeHRM places between the label and the actual input element.
      */
-    @FindBy(xpath = "//label[normalize-space()='Employee Id']/following-sibling::div//input")
+    @FindBy(xpath = "//label[normalize-space()='Employee Id']/following::input[1]")
     private WebElement employeeIdField;
 
     /** Save / Submit button (used on both Add Employee and Search forms). */

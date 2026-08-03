@@ -177,21 +177,42 @@
                   <a name="TC06_AddNewEmployeeTest">
                   </a> <!-- TC06_AddNewEmployeeTest -->
                   <span class="method-name">TC06_AddNewEmployeeTest</span>
-                  <div class="stack-trace">java.lang.RuntimeException: Employee save did not complete: still on addEmployee page
-	at com.orangehrm.qa.pages.PIMPage.getSuccessToastMessage(PIMPage.java:181)
-	at com.orangehrm.qa.tests.PIMTest.TC06_AddNewEmployeeTest(PIMTest.java:110)
+                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator &apos;By.xpath: //label[normalize-space()=&apos;Employee Id&apos;]/following-sibling::div//input&apos; (tried for 15 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at com.orangehrm.qa.pages.BasePage.type(BasePage.java:72)
+	at com.orangehrm.qa.pages.PIMPage.enterEmployeeId(PIMPage.java:144)
+	at com.orangehrm.qa.tests.PIMTest.TC06_AddNewEmployeeTest(PIMTest.java:114)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-Caused by: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for condition to not be valid: url to contain &quot;addEmployee&quot;. Current url: &quot;https://opensource-demo.orangehrmlive.com/web/index.php/pim/addEmployee&quot; (tried for 10 second(s) with 500 milliseconds interval)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//label[normalize-space()=&apos;Employee Id&apos;]/following-sibling::div//input&quot;}
+  (Session info: chrome=150.0.7871.187)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
 Build info: version: &apos;4.18.1&apos;, revision: &apos;b1d3319b48&apos;
 System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.8&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 150.0.7871.187, chrome: {chromedriverVersion: 150.0.7871.124 (9261fd0a595..., userDataDir: C:\Users\Ovindu\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60652}, goog:processID: 17816, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60652/devtoo..., se:cdpVersion: 150.0.7871.187, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 708540c90328829a9fbeb5204617838a
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
-	at com.orangehrm.qa.pages.PIMPage.getSuccessToastMessage(PIMPage.java:177)
-	... 31 more
-... Removed 29 stack frames
+Command: [9b6001c88f36aeadfdcf3d8220c00626, findElement {value=//label[normalize-space()=&apos;Employee Id&apos;]/following-sibling::div//input, using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 150.0.7871.187, chrome: {chromedriverVersion: 150.0.7871.124 (9261fd0a595..., userDataDir: C:\Users\Ovindu\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62960}, goog:processID: 8124, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62960/devtoo..., se:cdpVersion: 150.0.7871.187, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 9b6001c88f36aeadfdcf3d8220c00626
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:519)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:356)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:350)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy13.isDisplayed(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:304)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:287)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
+	... 33 more
+... Removed 32 stack frames
 </div> <!-- stack-trace -->
                   <em>
 (TC-06: Verify new employee can be added)                  </em>
@@ -381,38 +402,38 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(7);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'TC06_AddNewEmployeeTest')
-data.setCell(0, 2, 'com.orangehrm.qa.tests.PIMTest')
-data.setCell(0, 3, 35179);
+data.setCell(0, 1, 'TC02_InvalidPasswordTest')
+data.setCell(0, 2, 'com.orangehrm.qa.tests.LoginTest')
+data.setCell(0, 3, 46860);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'TC02_InvalidPasswordTest')
-data.setCell(1, 2, 'com.orangehrm.qa.tests.LoginTest')
-data.setCell(1, 3, 2281);
+data.setCell(1, 1, 'TC06_AddNewEmployeeTest')
+data.setCell(1, 2, 'com.orangehrm.qa.tests.PIMTest')
+data.setCell(1, 3, 33937);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'TC01_ValidLoginTest')
 data.setCell(2, 2, 'com.orangehrm.qa.tests.LoginTest')
-data.setCell(2, 3, 2094);
+data.setCell(2, 3, 6981);
 data.setCell(3, 0, 3)
 data.setCell(3, 1, 'TC03_EmptyUsernameTest')
 data.setCell(3, 2, 'com.orangehrm.qa.tests.LoginTest')
-data.setCell(3, 3, 818);
+data.setCell(3, 3, 292);
 data.setCell(4, 0, 4)
 data.setCell(4, 1, 'TC04_EmptyPasswordTest')
 data.setCell(4, 2, 'com.orangehrm.qa.tests.LoginTest')
-data.setCell(4, 3, 460);
+data.setCell(4, 3, 225);
 data.setCell(5, 0, 5)
 data.setCell(5, 1, 'TC05_BothFieldsEmptyTest')
 data.setCell(5, 2, 'com.orangehrm.qa.tests.LoginTest')
-data.setCell(5, 3, 248);
+data.setCell(5, 3, 140);
 data.setCell(6, 0, 6)
 data.setCell(6, 1, 'TC07_SearchExistingEmployeeTest')
 data.setCell(6, 2, 'com.orangehrm.qa.tests.PIMTest')
-data.setCell(6, 3, 0);
+data.setCell(6, 3, 1);
 window.suiteTableData['OrangeHRM_QA_Automation_Suite']= { tableData: data, tableDiv: 'times-div-OrangeHRM_QA_Automation_Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 41 seconds</span>
+              <span class="suite-total-time">Total running time: 1 minutes</span>
               <div id="times-div-OrangeHRM_QA_Automation_Suite">
               </div> <!-- times-div-OrangeHRM_QA_Automation_Suite -->
             </div> <!-- times-div -->
@@ -454,87 +475,87 @@ return data;
               </div> <!-- configuration-suite before -->
               <div class="configuration-method before">
                 <span class="method-name">beforeMethod</span>
-                <span class="method-start">218 ms</span>
+                <span class="method-start">234 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">TC01_ValidLoginTest</span>
-                <span class="method-start">6694 ms</span>
+                <span class="method-start">11312 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">afterMethod([TestResult name=TC01_ValidLoginTest status=SUCCESS method=LoginTest.TC01_ValidLoginTest()[pri:1, in...)</span>
-                <span class="method-start">8790 ms</span>
+                <span class="method-start">18295 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">beforeMethod</span>
-                <span class="method-start">9180 ms</span>
+                <span class="method-start">18797 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">TC02_InvalidPasswordTest</span>
-                <span class="method-start">23725 ms</span>
+                <span class="method-start">27162 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">afterMethod([TestResult name=TC02_InvalidPasswordTest status=SUCCESS method=LoginTest.TC02_InvalidPasswordTest()...)</span>
-                <span class="method-start">26006 ms</span>
+                <span class="method-start">74023 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">beforeMethod</span>
-                <span class="method-start">26485 ms</span>
+                <span class="method-start">74438 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">TC03_EmptyUsernameTest</span>
-                <span class="method-start">40957 ms</span>
+                <span class="method-start">80550 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">afterMethod([TestResult name=TC03_EmptyUsernameTest status=SUCCESS method=LoginTest.TC03_EmptyUsernameTest()[pri...)</span>
-                <span class="method-start">41775 ms</span>
+                <span class="method-start">80843 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">beforeMethod</span>
-                <span class="method-start">44357 ms</span>
+                <span class="method-start">81139 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">TC04_EmptyPasswordTest</span>
-                <span class="method-start">62585 ms</span>
+                <span class="method-start">86647 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">afterMethod([TestResult name=TC04_EmptyPasswordTest status=SUCCESS method=LoginTest.TC04_EmptyPasswordTest()[pri...)</span>
-                <span class="method-start">63045 ms</span>
+                <span class="method-start">86873 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">beforeMethod</span>
-                <span class="method-start">64015 ms</span>
+                <span class="method-start">87220 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">TC05_BothFieldsEmptyTest</span>
-                <span class="method-start">74724 ms</span>
+                <span class="method-start">113321 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">afterMethod([TestResult name=TC05_BothFieldsEmptyTest status=SUCCESS method=LoginTest.TC05_BothFieldsEmptyTest()...)</span>
-                <span class="method-start">74973 ms</span>
+                <span class="method-start">113462 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.orangehrm.qa.tests.PIMTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">beforeMethod</span>
-                <span class="method-start">75789 ms</span>
+                <span class="method-start">113831 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">TC06_AddNewEmployeeTest</span>
-                <span class="method-start">96513 ms</span>
+                <span class="method-start">119436 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">afterMethod([TestResult name=TC06_AddNewEmployeeTest status=FAILURE method=PIMTest.TC06_AddNewEmployeeTest()[pri...)</span>
-                <span class="method-start">131697 ms</span>
+                <span class="method-start">153385 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.orangehrm.qa.tests.LoginTest</div> <!-- chronological-class-name -->
               <div class="configuration-suite after">
                 <span class="method-name">afterSuite</span>
-                <span class="method-start">132633 ms</span>
+                <span class="method-start">153985 ms</span>
               </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

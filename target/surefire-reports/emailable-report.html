@@ -9,25 +9,46 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="8">OrangeHRM QA Automation Suite</th></tr>
-<tr><td><a href="#t0">OrangeHRM Full Test Run</a></td><td class="num">5</td><td class="num attn">1</td><td class="num">0</td><td class="num attn">1</td><td class="num">132,408</td><td></td><td></td></tr>
+<tr><td><a href="#t0">OrangeHRM Full Test Run</a></td><td class="num">5</td><td class="num attn">1</td><td class="num">0</td><td class="num attn">1</td><td class="num">153,705</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">OrangeHRM QA Automation Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">OrangeHRM Full Test Run &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">com.orangehrm.qa.tests.PIMTest</td><td><a href="#m0">TC06_AddNewEmployeeTest</a></td><td rowspan="1">1785751861763</td><td rowspan="1">35179</td></tr><tr><th colspan="4">OrangeHRM Full Test Run &#8212; skipped</th></tr><tr class="skippedeven"><td rowspan="1">com.orangehrm.qa.tests.PIMTest</td><td><a href="#m1">TC07_SearchExistingEmployeeTest</a></td><td rowspan="1">1785751897850</td><td rowspan="1">0</td></tr><tr><th colspan="4">OrangeHRM Full Test Run &#8212; passed</th></tr><tr class="passedeven"><td rowspan="5">com.orangehrm.qa.tests.LoginTest</td><td><a href="#m2">TC01_ValidLoginTest</a></td><td rowspan="1">1785751771944</td><td rowspan="1">2094</td></tr><tr class="passedeven"><td><a href="#m3">TC02_InvalidPasswordTest</a></td><td rowspan="1">1785751788975</td><td rowspan="1">2281</td></tr><tr class="passedeven"><td><a href="#m4">TC03_EmptyUsernameTest</a></td><td rowspan="1">1785751806207</td><td rowspan="1">818</td></tr><tr class="passedeven"><td><a href="#m5">TC04_EmptyPasswordTest</a></td><td rowspan="1">1785751827835</td><td rowspan="1">460</td></tr><tr class="passedeven"><td><a href="#m6">TC05_BothFieldsEmptyTest</a></td><td rowspan="1">1785751839974</td><td rowspan="1">248</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">OrangeHRM QA Automation Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">OrangeHRM Full Test Run &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">com.orangehrm.qa.tests.PIMTest</td><td><a href="#m0">TC06_AddNewEmployeeTest</a></td><td rowspan="1">1785752460742</td><td rowspan="1">33937</td></tr><tr><th colspan="4">OrangeHRM Full Test Run &#8212; skipped</th></tr><tr class="skippedeven"><td rowspan="1">com.orangehrm.qa.tests.PIMTest</td><td><a href="#m1">TC07_SearchExistingEmployeeTest</a></td><td rowspan="1">1785752495218</td><td rowspan="1">1</td></tr><tr><th colspan="4">OrangeHRM Full Test Run &#8212; passed</th></tr><tr class="passedeven"><td rowspan="5">com.orangehrm.qa.tests.LoginTest</td><td><a href="#m2">TC01_ValidLoginTest</a></td><td rowspan="1">1785752352618</td><td rowspan="1">6981</td></tr><tr class="passedeven"><td><a href="#m3">TC02_InvalidPasswordTest</a></td><td rowspan="1">1785752368468</td><td rowspan="1">46860</td></tr><tr class="passedeven"><td><a href="#m4">TC03_EmptyUsernameTest</a></td><td rowspan="1">1785752421856</td><td rowspan="1">292</td></tr><tr class="passedeven"><td><a href="#m5">TC04_EmptyPasswordTest</a></td><td rowspan="1">1785752427953</td><td rowspan="1">225</td></tr><tr class="passedeven"><td><a href="#m6">TC05_BothFieldsEmptyTest</a></td><td rowspan="1">1785752454627</td><td rowspan="1">140</td></tr></tbody>
 </table>
-<h2>OrangeHRM Full Test Run</h2><h3 id="m0">com.orangehrm.qa.tests.PIMTest#TC06_AddNewEmployeeTest</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.RuntimeException: Employee save did not complete: still on addEmployee page
-	at com.orangehrm.qa.pages.PIMPage.getSuccessToastMessage(PIMPage.java:181)
-	at com.orangehrm.qa.tests.PIMTest.TC06_AddNewEmployeeTest(PIMTest.java:110)
+<h2>OrangeHRM Full Test Run</h2><h3 id="m0">com.orangehrm.qa.tests.PIMTest#TC06_AddNewEmployeeTest</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator &apos;By.xpath: //label[normalize-space()=&apos;Employee Id&apos;]/following-sibling::div//input&apos; (tried for 15 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at com.orangehrm.qa.pages.BasePage.type(BasePage.java:72)
+	at com.orangehrm.qa.pages.PIMPage.enterEmployeeId(PIMPage.java:144)
+	at com.orangehrm.qa.tests.PIMTest.TC06_AddNewEmployeeTest(PIMTest.java:114)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-Caused by: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for condition to not be valid: url to contain &quot;addEmployee&quot;. Current url: &quot;https://opensource-demo.orangehrmlive.com/web/index.php/pim/addEmployee&quot; (tried for 10 second(s) with 500 milliseconds interval)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//label[normalize-space()=&apos;Employee Id&apos;]/following-sibling::div//input&quot;}
+  (Session info: chrome=150.0.7871.187)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
 Build info: version: &apos;4.18.1&apos;, revision: &apos;b1d3319b48&apos;
 System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.8&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 150.0.7871.187, chrome: {chromedriverVersion: 150.0.7871.124 (9261fd0a595..., userDataDir: C:\Users\Ovindu\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60652}, goog:processID: 17816, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60652/devtoo..., se:cdpVersion: 150.0.7871.187, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 708540c90328829a9fbeb5204617838a
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
-	at com.orangehrm.qa.pages.PIMPage.getSuccessToastMessage(PIMPage.java:177)
-	... 31 more
-... Removed 29 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+Command: [9b6001c88f36aeadfdcf3d8220c00626, findElement {value=//label[normalize-space()=&apos;Employee Id&apos;]/following-sibling::div//input, using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 150.0.7871.187, chrome: {chromedriverVersion: 150.0.7871.124 (9261fd0a595..., userDataDir: C:\Users\Ovindu\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62960}, goog:processID: 8124, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62960/devtoo..., se:cdpVersion: 150.0.7871.187, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 9b6001c88f36aeadfdcf3d8220c00626
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:519)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:356)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:350)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy13.isDisplayed(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:304)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:287)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
+	... 33 more
+... Removed 32 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 <h3 id="m1">com.orangehrm.qa.tests.PIMTest#TC07_SearchExistingEmployeeTest</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.Throwable: Method com.orangehrm.qa.tests.PIMTest.TC07_SearchExistingEmployeeTest() on instance com.orangehrm.qa.tests.PIMTest@4466af20 depends on not successfully finished methods 
 [com.orangehrm.qa.tests.PIMTest.TC06_AddNewEmployeeTest() on instance com.orangehrm.qa.tests.PIMTest@4466af20]
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
