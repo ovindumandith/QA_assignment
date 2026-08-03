@@ -9,6 +9,9 @@ import com.orangehrm.qa.utils.ExtentReportManager;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
+
 /**
  * Test class covering PIM (Personnel Information Management) module scenarios.
  *
@@ -20,6 +23,14 @@ import org.testng.annotations.Test;
  * If TC-06 is skipped or fails, TC-07 is automatically skipped by TestNG.
  */
 public class PIMTest extends BaseTest {
+
+    /**
+     * Unique first name generated once per JVM run (e.g. "Auto0803-1423").
+     * Static so TC06 and TC07 share the exact same value regardless of how
+     * TestNG creates/reuses test instances.
+     */
+    private static final String EMPLOYEE_FIRST_NAME =
+            "Auto" + LocalDateTime.now().format(DateTimeFormatter.ofPattern("MMdd-HHmm"));
 
     // -------------------------------------------------------------------------
     // Helper: derive the base root URL from the configured base.url
@@ -86,8 +97,8 @@ public class PIMTest extends BaseTest {
 
         PIMPage pimPage = new PIMPage(DriverManager.getDriver());
 
-        test.info("Entering employee first name: AutoTest");
-        pimPage.enterFirstName("AutoTest");
+        test.info("Entering employee first name: " + EMPLOYEE_FIRST_NAME);
+        pimPage.enterFirstName(EMPLOYEE_FIRST_NAME);
 
         test.info("Entering employee last name: Employee");
         pimPage.enterLastName("Employee");
@@ -128,8 +139,8 @@ public class PIMTest extends BaseTest {
 
         PIMPage pimPage = new PIMPage(DriverManager.getDriver());
 
-        test.info("Searching for employee: AutoTest");
-        pimPage.searchEmployeeByName("AutoTest");
+        test.info("Searching for employee: " + EMPLOYEE_FIRST_NAME);
+        pimPage.searchEmployeeByName(EMPLOYEE_FIRST_NAME);
 
         test.info("Verifying at least one search result is returned");
         int resultCount = pimPage.getSearchResultCount();
@@ -141,8 +152,8 @@ public class PIMTest extends BaseTest {
         test.info("Verifying first result contains the expected name");
         String firstName = pimPage.getFirstResultEmployeeName();
         Assert.assertTrue(
-            firstName.contains("AutoTest"),
-            "Expected first result name to contain 'AutoTest' but got: " + firstName
+            firstName.contains(EMPLOYEE_FIRST_NAME),
+            "Expected first result name to contain '" + EMPLOYEE_FIRST_NAME + "' but got: " + firstName
         );
 
         test.pass("Employee search verified. Result count: " + resultCount

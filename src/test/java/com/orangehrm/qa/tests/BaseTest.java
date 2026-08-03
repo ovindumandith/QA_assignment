@@ -6,8 +6,13 @@ import com.orangehrm.qa.utils.ConfigReader;
 import com.orangehrm.qa.utils.DriverManager;
 import com.orangehrm.qa.utils.ExtentReportManager;
 import com.orangehrm.qa.utils.ScreenshotUtil;
+import org.openqa.selenium.By;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.ITestResult;
 import org.testng.annotations.*;
+
+import java.time.Duration;
 
 /**
  * Abstract base class for all TestNG test classes in the framework.
@@ -71,19 +76,17 @@ public abstract class BaseTest {
      * Launches a new browser instance and navigates to the application URL
      * before each individual test method.
      *
-     * <p>A 2-second sleep is included after navigation to allow the React SPA
-     * to complete its initial render before test interactions begin. Without
-     * this buffer, element lookups may start before the framework has mounted
-     * the login form into the DOM.
-     *
-     * @throws InterruptedException if the sleep is interrupted unexpectedly
+     * <p>Rather than a fixed sleep, an explicit wait polls until the login
+     * username field is visible (up to 30 s). This handles both fast and slow
+     * loads of the React SPA without wasting time on fast machines.
      */
     @BeforeMethod(alwaysRun = true)
-    public void beforeMethod() throws InterruptedException {
+    public void beforeMethod() {
         DriverManager.initDriver();
         DriverManager.getDriver().get(ConfigReader.get("base.url"));
-        // Allow React SPA initial render to complete before test interactions
-        Thread.sleep(2000);
+        // Wait for the SPA to render the login form — more reliable than Thread.sleep
+        new WebDriverWait(DriverManager.getDriver(), Duration.ofSeconds(30))
+                .until(ExpectedConditions.visibilityOfElementLocated(By.name("username")));
     }
 
     /**

@@ -3,6 +3,16 @@
 <suite name="Failed suite [OrangeHRM QA Automation Suite]" guice-stage="DEVELOPMENT" verbose="0">
   <test thread-count="5" name="OrangeHRM Full Test Run(failed)" verbose="0">
     <classes>
+      <class name="com.orangehrm.qa.tests.LoginTest">
+        <methods>
+          <include name="TC02_InvalidPasswordTest"/>
+          <include name="afterMethod"/>
+          <include name="beforeSuite"/>
+          <include name="afterSuite"/>
+          <include name="beforeMethod"/>
+          <include name="TC05_BothFieldsEmptyTest"/>
+        </methods>
+      </class> <!-- com.orangehrm.qa.tests.LoginTest -->
       <class name="com.orangehrm.qa.tests.PIMTest">
         <methods>
           <include name="afterMethod"/>

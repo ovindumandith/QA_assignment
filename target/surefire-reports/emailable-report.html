@@ -9,19 +9,18 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="8">OrangeHRM QA Automation Suite</th></tr>
-<tr><td><a href="#t0">OrangeHRM Full Test Run</a></td><td class="num">5</td><td class="num attn">1</td><td class="num">0</td><td class="num attn">1</td><td class="num">136,111</td><td></td><td></td></tr>
+<tr><td><a href="#t0">OrangeHRM Full Test Run</a></td><td class="num">3</td><td class="num attn">2</td><td class="num">0</td><td class="num attn">2</td><td class="num">173,889</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">OrangeHRM QA Automation Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">OrangeHRM Full Test Run &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">com.orangehrm.qa.tests.PIMTest</td><td><a href="#m0">TC06_AddNewEmployeeTest</a></td><td rowspan="1">1785748944761</td><td rowspan="1">32125</td></tr><tr><th colspan="4">OrangeHRM Full Test Run &#8212; skipped</th></tr><tr class="skippedeven"><td rowspan="1">com.orangehrm.qa.tests.PIMTest</td><td><a href="#m1">TC07_SearchExistingEmployeeTest</a></td><td rowspan="1">1785748977394</td><td rowspan="1">0</td></tr><tr><th colspan="4">OrangeHRM Full Test Run &#8212; passed</th></tr><tr class="passedeven"><td rowspan="5">com.orangehrm.qa.tests.LoginTest</td><td><a href="#m2">TC01_ValidLoginTest</a></td><td rowspan="1">1785748850590</td><td rowspan="1">8408</td></tr><tr class="passedeven"><td><a href="#m3">TC02_InvalidPasswordTest</a></td><td rowspan="1">1785748877357</td><td rowspan="1">8655</td></tr><tr class="passedeven"><td><a href="#m4">TC03_EmptyUsernameTest</a></td><td rowspan="1">1785748901103</td><td rowspan="1">465</td></tr><tr class="passedeven"><td><a href="#m5">TC04_EmptyPasswordTest</a></td><td rowspan="1">1785748914664</td><td rowspan="1">244</td></tr><tr class="passedeven"><td><a href="#m6">TC05_BothFieldsEmptyTest</a></td><td rowspan="1">1785748930043</td><td rowspan="1">150</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">OrangeHRM QA Automation Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">OrangeHRM Full Test Run &#8212; failed (configuration methods)</th></tr><tr class="failedeven"><td rowspan="1">com.orangehrm.qa.tests.LoginTest</td><td><a href="#m0">beforeMethod</a></td><td rowspan="1">1785749644759</td><td rowspan="1">9380</td></tr><tr><th colspan="4">OrangeHRM Full Test Run &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">com.orangehrm.qa.tests.LoginTest</td><td><a href="#m1">TC02_InvalidPasswordTest</a></td><td rowspan="1">1785749544134</td><td rowspan="1">30611</td></tr><tr class="failedodd"><td rowspan="1">com.orangehrm.qa.tests.PIMTest</td><td><a href="#m2">TC06_AddNewEmployeeTest</a></td><td rowspan="1">1785749667805</td><td rowspan="1">19536</td></tr><tr><th colspan="4">OrangeHRM Full Test Run &#8212; skipped</th></tr><tr class="skippedeven"><td rowspan="1">com.orangehrm.qa.tests.LoginTest</td><td><a href="#m3">TC05_BothFieldsEmptyTest</a></td><td rowspan="1">1785749654143</td><td rowspan="1">1</td></tr><tr class="skippedodd"><td rowspan="1">com.orangehrm.qa.tests.PIMTest</td><td><a href="#m4">TC07_SearchExistingEmployeeTest</a></td><td rowspan="1">1785749688092</td><td rowspan="1">0</td></tr><tr><th colspan="4">OrangeHRM Full Test Run &#8212; passed</th></tr><tr class="passedeven"><td rowspan="3">com.orangehrm.qa.tests.LoginTest</td><td><a href="#m5">TC01_ValidLoginTest</a></td><td rowspan="1">1785749524419</td><td rowspan="1">9631</td></tr><tr class="passedeven"><td><a href="#m6">TC03_EmptyUsernameTest</a></td><td rowspan="1">1785749636714</td><td rowspan="1">258</td></tr><tr class="passedeven"><td><a href="#m7">TC04_EmptyPasswordTest</a></td><td rowspan="1">1785749644180</td><td rowspan="1">251</td></tr></tbody>
 </table>
-<h2>OrangeHRM Full Test Run</h2><h3 id="m0">com.orangehrm.qa.tests.PIMTest#TC06_AddNewEmployeeTest</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;button data-v-10d463b7=&quot;&quot; data-v-304890b0=&quot;&quot; type=&quot;submit&quot; class=&quot;oxd-button oxd-button--medium oxd-button--secondary orangehrm-left-space&quot;&gt;...&lt;/button&gt; is not clickable at point (1402, 491). Other element would receive the click: &lt;div data-v-d5bfe35b=&quot;&quot; class=&quot;oxd-form-loader&quot;&gt;...&lt;/div&gt;
+<h2>OrangeHRM Full Test Run</h2><h3 id="m0">com.orangehrm.qa.tests.LoginTest#beforeMethod</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.WebDriverException: unknown error: net::ERR_CONNECTION_REFUSED
   (Session info: chrome=150.0.7871.187)
 Build info: version: &apos;4.18.1&apos;, revision: &apos;b1d3319b48&apos;
 System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.8&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [d38a14f34c0fa2a50718003a0cfd4713, clickElement {id=f.B20B8B349521176BBF072F8F69C4F9AD.d.3C442421AC3E2D0F4EE61F21AFBB0529.e.66}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 150.0.7871.187, chrome: {chromedriverVersion: 150.0.7871.124 (9261fd0a595..., userDataDir: C:\Users\Ovindu\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56923}, goog:processID: 18400, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56923/devtoo..., se:cdpVersion: 150.0.7871.187, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (d38a14f34c0fa2a50718003a0cfd4713)] -&gt; css selector: button[type=&apos;submit&apos;]]
-Session ID: d38a14f34c0fa2a50718003a0cfd4713
+Command: [db351006692e40b01a9141d59266281b, get {url=https://opensource-demo.orangehrmlive.com/web/index.php/auth/login}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 150.0.7871.187, chrome: {chromedriverVersion: 150.0.7871.124 (9261fd0a595..., userDataDir: C:\Users\Ovindu\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63324}, goog:processID: 21492, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63324/devtoo..., se:cdpVersion: 150.0.7871.187, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: db351006692e40b01a9141d59266281b
 	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
@@ -29,23 +28,76 @@ Session ID: d38a14f34c0fa2a50718003a0cfd4713
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:519)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-	at jdk.proxy2/jdk.proxy2.$Proxy13.click(Unknown Source)
-	at com.orangehrm.qa.pages.BasePage.click(BasePage.java:48)
-	at com.orangehrm.qa.pages.PIMPage.clickSave(PIMPage.java:127)
-	at com.orangehrm.qa.tests.PIMTest.TC06_AddNewEmployeeTest(PIMTest.java:96)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:301)
+	at com.orangehrm.qa.tests.BaseTest.beforeMethod(BaseTest.java:84)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-... Removed 34 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">com.orangehrm.qa.tests.PIMTest#TC07_SearchExistingEmployeeTest</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.Throwable: Method com.orangehrm.qa.tests.PIMTest.TC07_SearchExistingEmployeeTest() on instance com.orangehrm.qa.tests.PIMTest@158da8e depends on not successfully finished methods 
+... Removed 36 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">com.orangehrm.qa.tests.LoginTest#TC02_InvalidPasswordTest</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator &apos;By.name: username&apos; (tried for 15 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at com.orangehrm.qa.pages.BasePage.type(BasePage.java:72)
+	at com.orangehrm.qa.pages.LoginPage.enterUsername(LoginPage.java:80)
+	at com.orangehrm.qa.pages.LoginPage.login(LoginPage.java:107)
+	at com.orangehrm.qa.tests.LoginTest.TC02_InvalidPasswordTest(LoginTest.java:86)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;*[name=&apos;username&apos;]&quot;}
+  (Session info: chrome=150.0.7871.187)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.18.1&apos;, revision: &apos;b1d3319b48&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.8&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [22c8044a1842a46bdf6263fee9c08223, findElement {using=name, value=username}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 150.0.7871.187, chrome: {chromedriverVersion: 150.0.7871.124 (9261fd0a595..., userDataDir: C:\Users\Ovindu\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63379}, goog:processID: 23248, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63379/devtoo..., se:cdpVersion: 150.0.7871.187, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 22c8044a1842a46bdf6263fee9c08223
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:519)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:356)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:350)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy13.isDisplayed(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:304)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:287)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
+	... 34 more
+... Removed 32 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">com.orangehrm.qa.tests.PIMTest#TC06_AddNewEmployeeTest</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: Expected toast to contain &apos;Successfully Saved&apos; but got: Error expected [true] but found [false]
+	at com.orangehrm.qa.tests.PIMTest.TC06_AddNewEmployeeTest(PIMTest.java:100)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 32 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">com.orangehrm.qa.tests.LoginTest#TC05_BothFieldsEmptyTest</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.WebDriverException: unknown error: net::ERR_CONNECTION_REFUSED
+  (Session info: chrome=150.0.7871.187)
+Build info: version: &apos;4.18.1&apos;, revision: &apos;b1d3319b48&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.8&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [db351006692e40b01a9141d59266281b, get {url=https://opensource-demo.orangehrmlive.com/web/index.php/auth/login}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 150.0.7871.187, chrome: {chromedriverVersion: 150.0.7871.124 (9261fd0a595..., userDataDir: C:\Users\Ovindu\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63324}, goog:processID: 21492, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63324/devtoo..., se:cdpVersion: 150.0.7871.187, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: db351006692e40b01a9141d59266281b
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:519)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:301)
+	at com.orangehrm.qa.tests.BaseTest.beforeMethod(BaseTest.java:84)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 36 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">com.orangehrm.qa.tests.PIMTest#TC07_SearchExistingEmployeeTest</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.Throwable: Method com.orangehrm.qa.tests.PIMTest.TC07_SearchExistingEmployeeTest() on instance com.orangehrm.qa.tests.PIMTest@158da8e depends on not successfully finished methods 
 [com.orangehrm.qa.tests.PIMTest.TC06_AddNewEmployeeTest() on instance com.orangehrm.qa.tests.PIMTest@158da8e]
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
 ... Removed 22 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m2">com.orangehrm.qa.tests.LoginTest#TC01_ValidLoginTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m3">com.orangehrm.qa.tests.LoginTest#TC02_InvalidPasswordTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m4">com.orangehrm.qa.tests.LoginTest#TC03_EmptyUsernameTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m5">com.orangehrm.qa.tests.LoginTest#TC04_EmptyPasswordTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m6">com.orangehrm.qa.tests.LoginTest#TC05_BothFieldsEmptyTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">com.orangehrm.qa.tests.LoginTest#TC01_ValidLoginTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m6">com.orangehrm.qa.tests.LoginTest#TC03_EmptyUsernameTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m7">com.orangehrm.qa.tests.LoginTest#TC04_EmptyPasswordTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>
