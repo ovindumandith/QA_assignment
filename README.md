@@ -83,3 +83,94 @@ OrangeHRM-QA-Automation/
 │
 └── screenshots/
     └── Failure screenshots
+
+
+## 🧪 Test Cases
+
+### 🔐 Login Module
+
+**Test Class:** `LoginTest.java`
+
+| ID | Test Scenario | Groups |
+|---|---|---|
+| TC-01 | Valid login with correct credentials | smoke, regression |
+| TC-02 | Error message shown for invalid password | smoke, regression |
+| TC-03 | Validation shown when username is empty | regression |
+| TC-04 | Validation shown when password is empty | regression |
+| TC-05 | Validation shown when both fields are empty | regression |
+
+### 👤 PIM Module
+
+**Test Class:** `PIMTest.java`
+
+| ID | Test Scenario | Groups |
+|---|---|---|
+| TC-06 | Add a new employee using the Add Employee form | smoke, regression |
+| TC-07 | Search for the employee created in TC-06 | smoke, regression |
+
+> **Note:** TC-07 depends on TC-06 because the employee created in TC-06 is used as test data for the search scenario.
+
+---
+
+## ⚙️ Prerequisites
+
+Before running the project, make sure the following are installed:
+
+- **Java 17** or later
+- **Maven 3.x**
+- **Google Chrome**
+- A stable **Internet connection**
+
+Verify the installations using:
+
+```bash
+java -version
+mvn -version
+
+## 🔧 Configuration
+
+Application and test settings are stored in:
+
+```text
+src/test/resources/config.properties
+
+base.url=https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
+admin.username=Admin
+admin.password=admin123
+browser=chrome
+implicit.wait=10
+explicit.wait=15
+screenshot.path=screenshots/
+
+▶️ How to Run
+Run All Tests
+
+From the project root directory, run:
+
+mvn test
+Run Smoke Tests
+
+To execute only the smoke tests, enable the smoke group in testng.xml:
+
+<groups>
+    <run>
+        <include name="smoke"/>
+    </run>
+</groups>
+
+Then run:
+
+mvn test
+Run Regression Tests
+
+To execute the regression test suite, configure the regression group in testng.xml:
+
+<groups>
+    <run>
+        <include name="regression"/>
+    </run>
+</groups>
+
+Then run:
+
+mvn test
