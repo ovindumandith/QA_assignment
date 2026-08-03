@@ -275,19 +275,7 @@ This project is developed for educational purposes as part of the AQA coursework
 
 ## 👥 Authors
 
-- **Your Name** - *Initial work* - [YourGitHub](https://github.com/yourusername)
+- **Ovindu Gunatunga ** - *Initial work* - [YourGitHub][(https://github.com/yourusername](https://github.com/ovindumandith))
 
 ---
 
-## 🙏 Acknowledgments
-
-- OrangeHRM for providing the demo application
-- UCSC Faculty for guidance and support
-- Selenium and TestNG communities for excellent documentation
-
----
-
-## 📞 Contact
-
-For any queries or issues, please open an issue in the GitHub repository or contact the project maintainers.
-```
