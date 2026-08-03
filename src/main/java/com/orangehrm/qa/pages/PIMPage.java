@@ -46,11 +46,10 @@ public class PIMPage extends BasePage {
     /**
      * Employee ID input on the Add Employee form.
      *
-     * <p>The {@code label} attribute is not a standard HTML form attribute, so
-     * we use an XPath that navigates from the visible label text to the
-     * associated input sibling.
+     * <p>Uses {@code normalize-space()} so the XPath matches regardless of
+     * whitespace differences in the rendered label text.
      */
-    @FindBy(xpath = "//label[text()='Employee Id']/following-sibling::div//input")
+    @FindBy(xpath = "//label[normalize-space()='Employee Id']/following-sibling::div//input")
     private WebElement employeeIdField;
 
     /** Save / Submit button (used on both Add Employee and Search forms). */
@@ -130,6 +129,19 @@ public class PIMPage extends BasePage {
      */
     public void enterLastName(String lastName) {
         type(lastNameField, lastName);
+    }
+
+    /**
+     * Clears the auto-generated Employee ID and replaces it with the given value.
+     *
+     * <p>OrangeHRM pre-populates this field with the next sequential ID, but
+     * repeated test runs can exhaust those IDs or create conflicts.  Supplying
+     * a timestamp-derived unique value avoids "Employee Id already exists" errors.
+     *
+     * @param employeeId the unique employee ID string to set (max 10 chars)
+     */
+    public void enterEmployeeId(String employeeId) {
+        type(employeeIdField, employeeId);
     }
 
     /**

@@ -32,6 +32,13 @@ public class PIMTest extends BaseTest {
     private static final String EMPLOYEE_FIRST_NAME =
             "Auto" + LocalDateTime.now().format(DateTimeFormatter.ofPattern("MMdd-HHmm"));
 
+    /**
+     * Unique Employee ID derived from the current epoch millis (last 5 digits).
+     * Prevents "Employee Id already exists" errors on repeated test runs.
+     */
+    private static final String EMPLOYEE_ID =
+            String.valueOf(System.currentTimeMillis() % 90000 + 10000);
+
     // -------------------------------------------------------------------------
     // Helper: derive the base root URL from the configured base.url
     // e.g. "https://opensource-demo.orangehrmlive.com"
@@ -102,6 +109,9 @@ public class PIMTest extends BaseTest {
 
         test.info("Entering employee last name: Employee");
         pimPage.enterLastName("Employee");
+
+        test.info("Setting unique Employee ID: " + EMPLOYEE_ID);
+        pimPage.enterEmployeeId(EMPLOYEE_ID);
 
         test.info("Clicking Save");
         pimPage.clickSave();
