@@ -11,12 +11,14 @@ import java.util.stream.Collectors;
 /**
  * Page Object for the OrangeHRM Login page.
  *
- * <p>Encapsulates all interactions with the login form, including entering
+ * <p>
+ * Encapsulates all interactions with the login form, including entering
  * credentials, triggering login, and retrieving validation or error messages.
  * Extend this class is not intended; all public methods represent the page's
  * full public API.
  *
- * <p>URL:
+ * <p>
+ * URL:
  * {@code https://opensource-demo.orangehrmlive.com/web/index.php/auth/login}
  */
 public class LoginPage extends BasePage {
@@ -37,7 +39,9 @@ public class LoginPage extends BasePage {
     @FindBy(css = "button[type='submit']")
     private WebElement loginButton;
 
-    /** Red error alert shown for invalid credentials (e.g. "Invalid credentials"). */
+    /**
+     * Red error alert shown for invalid credentials (e.g. "Invalid credentials").
+     */
     @FindBy(xpath = "//div[contains(@class,'oxd-alert-content')]//p")
     private WebElement errorMessage;
 

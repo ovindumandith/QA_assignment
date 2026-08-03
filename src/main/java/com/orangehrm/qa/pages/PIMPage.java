@@ -30,17 +30,20 @@ public class PIMPage extends BasePage {
 
     /**
      * First-name input on the Add Employee form.
-     * The class {@code orangehrm-firstname} is on the wrapper div, not the input;
-     * the input itself is reliably targeted by its placeholder attribute.
+     * Actual HTML: {@code <input class="oxd-input oxd-input--active orangehrm-firstname"
+     * name="firstName" placeholder="First name">}
+     * The class {@code orangehrm-firstname} is on the input element itself.
      */
-    @FindBy(css = "input[placeholder='First Name']")
+    @FindBy(css = "input.orangehrm-firstname")
     private WebElement firstNameField;
 
     /**
      * Last-name input on the Add Employee form.
-     * Same note as firstNameField — placeholder is more stable than wrapper class.
+     * Actual HTML: {@code <input class="oxd-input oxd-input--active orangehrm-lastname"
+     * name="lastName" placeholder="Last Name">}
+     * The class {@code orangehrm-lastname} is on the input element itself.
      */
-    @FindBy(css = "input[placeholder='Last Name']")
+    @FindBy(css = "input.orangehrm-lastname")
     private WebElement lastNameField;
 
     /**
@@ -58,14 +61,6 @@ public class PIMPage extends BasePage {
     @FindBy(css = "button[type='submit']")
     private WebElement saveButton;
 
-    /**
-     * Success toast notification text that appears after a record is saved.
-     *
-     * <p>This element is transient — always use {@link #getSuccessToastMessage()}
-     * rather than accessing this field directly.
-     */
-    @FindBy(css = ".oxd-toast-content .oxd-text--p")
-    private WebElement successToast;
 
     /** Autocomplete search input on the Employee List page. */
     @FindBy(css = ".oxd-autocomplete-text-input > input")
