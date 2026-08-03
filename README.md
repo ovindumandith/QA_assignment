@@ -1,4 +1,4 @@
-```markdown
+
 # OrangeHRM QA Automation Framework
 
 A **Selenium + TestNG + Page Object Model (POM)** test automation framework for the [OrangeHRM Demo Application](https://opensource-demo.orangehrmlive.com/), developed as part of the **Y4 Automated Quality Assurance (AQA)** coursework at the **University of Colombo School of Computing (UCSC)**.
