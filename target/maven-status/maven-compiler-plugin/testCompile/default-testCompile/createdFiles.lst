@@ -1,0 +1,3 @@
+com\orangehrm\qa\tests\PIMTest.class
+com\orangehrm\qa\tests\BaseTest.class
+com\orangehrm\qa\tests\LoginTest.class

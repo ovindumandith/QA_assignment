@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<!--
+    OrangeHRM QA Automation — TestNG Suite Definition
+
+    To run ONLY smoke tests, uncomment the <groups> block below and comment
+    out or remove the <classes> block, OR add the include to the existing run:
+
+        <groups>
+            <run>
+                <include name="smoke"/>
+            </run>
+        </groups>
+
+    By default all tests in both classes run in priority order.
+-->
+<suite name="OrangeHRM QA Automation Suite" verbose="2">
+
+    <test name="OrangeHRM Full Test Run">
+
+        <!--
+        <groups>
+            <run>
+                <include name="smoke"/>
+            </run>
+        </groups>
+        -->
+
+        <classes>
+            <class name="com.orangehrm.qa.tests.LoginTest"/>
+            <class name="com.orangehrm.qa.tests.PIMTest"/>
+        </classes>
+
+    </test>
+
+</suite>

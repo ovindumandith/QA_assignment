@@ -1,0 +1,8 @@
+com\orangehrm\qa\pages\DashboardPage.class
+com\orangehrm\qa\pages\PIMPage.class
+com\orangehrm\qa\utils\ScreenshotUtil.class
+com\orangehrm\qa\utils\ConfigReader.class
+com\orangehrm\qa\pages\BasePage.class
+com\orangehrm\qa\pages\LoginPage.class
+com\orangehrm\qa\utils\DriverManager.class
+com\orangehrm\qa\utils\ExtentReportManager.class
