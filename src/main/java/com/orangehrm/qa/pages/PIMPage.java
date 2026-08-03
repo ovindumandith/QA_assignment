@@ -267,19 +267,28 @@ public class PIMPage extends BasePage {
     }
 
     /**
-     * Returns the full name of the employee displayed in the first row of the
+     * Returns the first name of the employee displayed in the first row of the
      * search results table.
      *
-     * <p>The name cell is the second {@code .oxd-table-cell} within the first
-     * result row (index 1, because index 0 is the checkbox column).
+     * <p>OrangeHRM employee list table column order (1-indexed for XPath):
+     * <pre>
+     *   [1] Checkbox  [2] Employee ID  [3] First Name  [4] Last Name  …
+     * </pre>
      *
-     * @return the trimmed employee name string from the first result row
+     * <p>The implementation targets the cell directly with a single XPath query
+     * rather than first locating the row and then its children.  Holding an
+     * intermediate row reference causes {@link org.openqa.selenium.StaleElementReferenceException}
+     * when Vue.js re-renders the table after the search results load.
+     *
+     * @return the trimmed first-name string from the first result row
      */
     public String getFirstResultEmployeeName() {
-        WebElement firstRow = wait.until(
-                ExpectedConditions.visibilityOfElementLocated(RESULT_ROWS));
-        // Second cell (index 1) contains the employee name
-        List<WebElement> cells = firstRow.findElements(By.cssSelector(".oxd-table-cell"));
-        return cells.get(1).getText().trim();
+        // Single XPath — no intermediate element reference that can go stale
+        By nameCellLocator = By.xpath(
+                "(//div[contains(@class,'oxd-table-body')]"
+                + "//div[contains(@class,'oxd-table-row')])[1]"
+                + "//div[contains(@class,'oxd-table-cell')][3]");
+        return wait.until(ExpectedConditions.visibilityOfElementLocated(nameCellLocator))
+                   .getText().trim();
     }
 }
