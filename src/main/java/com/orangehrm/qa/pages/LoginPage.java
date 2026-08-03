@@ -38,7 +38,7 @@ public class LoginPage extends BasePage {
     private WebElement loginButton;
 
     /** Red error alert shown for invalid credentials (e.g. "Invalid credentials"). */
-    @FindBy(css = ".oxd-alert-content-text")
+    @FindBy(xpath = "//div[contains(@class,'oxd-alert-content')]//p")
     private WebElement errorMessage;
 
     /** Per-field validation messages shown when required fields are left empty. */

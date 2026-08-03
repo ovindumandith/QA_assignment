@@ -134,19 +134,26 @@ public class PIMPage extends BasePage {
     }
 
     /**
-     * Waits up to 5 seconds for the success toast notification to appear and
+     * Waits for the success toast notification to appear after saving and
      * returns its text.
      *
-     * <p>A separate short-lived {@link org.openqa.selenium.support.ui.WebDriverWait}
-     * is used here because the toast appears and disappears quickly, and 5
-     * seconds is sufficient without holding the full explicit-wait timeout.
+     * <p>OrangeHRM navigates from the Add Employee page to the employee detail
+     * page upon a successful save, and the toast is rendered on that new page.
+     * This method therefore first waits for the URL to leave {@code addEmployee}
+     * (confirming navigation completed) and then waits up to 10 seconds for
+     * the toast element to become visible.
      *
      * @return the trimmed text content of the toast notification
      */
     public String getSuccessToastMessage() {
-        WebElement toast = new org.openqa.selenium.support.ui.WebDriverWait(driver, Duration.ofSeconds(5))
+        // Wait for navigation away from the Add Employee page to complete
+        new org.openqa.selenium.support.ui.WebDriverWait(driver, Duration.ofSeconds(15))
+                .until(ExpectedConditions.not(
+                        ExpectedConditions.urlContains("addEmployee")));
+        // Toast element on the destination page — class used by OrangeHRM for the message text
+        WebElement toast = new org.openqa.selenium.support.ui.WebDriverWait(driver, Duration.ofSeconds(10))
                 .until(ExpectedConditions.visibilityOfElementLocated(
-                        By.cssSelector(".oxd-toast-content .oxd-text--p")));
+                        By.cssSelector(".oxd-toast-message-text")));
         return toast.getText().trim();
     }
 

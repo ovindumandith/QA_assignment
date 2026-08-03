@@ -6,10 +6,10 @@
       <class name="com.orangehrm.qa.tests.LoginTest">
         <methods>
           <include name="afterMethod"/>
+          <include name="TC02_InvalidPasswordTest"/>
           <include name="beforeSuite"/>
           <include name="afterSuite"/>
           <include name="beforeMethod"/>
-          <include name="TC05_BothFieldsEmptyTest"/>
         </methods>
       </class> <!-- com.orangehrm.qa.tests.LoginTest -->
       <class name="com.orangehrm.qa.tests.PIMTest">
