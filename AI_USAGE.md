@@ -1,4 +1,4 @@
-# AI_USAGE.md — Artificial Intelligence Usage Declaration
+# AI_USAGE.md - Artificial Intelligence Usage Declaration
 
 **Project:** OrangeHRM QA Automation Assignment  
 **Module:** IS4102 Advanced Software Quality Assurance  
@@ -30,7 +30,7 @@ productivity tool — not as a replacement for my own understanding.
 
 ## How AI Was Used — Section by Section
 
-### Step 2 — Requirement Analysis
+### Step 2 - Requirement Analysis
 - Used Claude to help structure the sections (Objectives, Users, Key Features, 
   Assumptions, Risks, Observations) after I had manually explored the OrangeHRM 
   demo site myself.
@@ -38,7 +38,7 @@ productivity tool — not as a replacement for my own understanding.
   the application. Claude helped me organise and phrase those observations clearly.
 - I reviewed and edited the output to reflect what I actually observed on the site.
 
-### Step 3 — Manual Test Scenario Design
+### Step 3 - Manual Test Scenario Design
 - Used Claude to help format the test scenario tables and suggest the structure 
   (Pre-condition, Test Steps, Expected Result, Note/Observation).
 - The actual test scenarios were designed by me based on my manual exploration 
@@ -46,7 +46,7 @@ productivity tool — not as a replacement for my own understanding.
 - All screenshots were taken by me manually running each scenario on the live 
   demo site.
 
-### Step 4 — Automation Decision
+### Step 4 - Automation Decision
 - Used Claude to help articulate the justification for each automation decision 
   after I had already decided which scenarios to automate based on my own analysis.
 - The scoring table criteria (Criticality, Repeatability, Stability, Feasibility, ROI) 
@@ -62,7 +62,7 @@ productivity tool — not as a replacement for my own understanding.
 - I reviewed every generated file, ran the code, and fixed issues that arose 
   during execution.
 
-### Step 6 — Automation Development
+### Step 6 - Automation Development
 - Claude Code (via VS Code) was used to scaffold the initial Java class files 
   including BasePage, LoginPage, DashboardPage, PIMPage, BaseTest, LoginTest, 
   and PIMTest.
@@ -72,7 +72,7 @@ productivity tool — not as a replacement for my own understanding.
 - The testng.xml and pom.xml were generated with Claude's assistance and 
   adjusted by me to resolve dependency and compilation issues.
 
-### Step 7 — Debugging Challenge
+### Step 7 - Debugging Challenge
 - The intentional bug strategy (wrong CSS selector) was suggested by Claude 
   after I asked for options. I selected this approach because it represents the 
   most realistic and common real-world Selenium failure.
@@ -81,7 +81,7 @@ productivity tool — not as a replacement for my own understanding.
   manually on the live application.
 - Claude helped me write up the debugging report clearly for the PDF submission.
 
-### Step 8 — Reflection Video
+### Step 8 - Reflection Video
 - Claude provided a suggested script structure for the 5-minute video.
 - The actual recording, narration, and demonstration were done by me.
 - I adapted the script based on what I actually built rather than reading it 
@@ -92,9 +92,9 @@ productivity tool — not as a replacement for my own understanding.
 ## What AI Was NOT Used For
 
 - AI did not run, execute, or observe any tests on my behalf.
-- AI did not take any screenshots — all screenshots in the report are from 
+- AI did not take any screenshots - all screenshots in the report are from 
   my own manual test execution on the live OrangeHRM demo site.
-- AI did not make Git commits — all commits were made by me with messages 
+- AI did not make Git commits - all commits were made by me with messages 
   I wrote.
 - AI did not access the OrangeHRM application directly.
 - The Viva (Step 9) will be answered entirely from my own understanding of 
@@ -107,7 +107,7 @@ productivity tool — not as a replacement for my own understanding.
 Using AI as a support tool during this assignment helped me work more efficiently, 
 particularly in structuring written sections and scaffolding boilerplate Java code. 
 However, I found that the AI-generated content consistently required review and 
-correction — locators needed to be verified against the real DOM, generated text 
+correction - locators needed to be verified against the real DOM, generated text 
 needed to be adjusted to reflect what I actually observed, and code needed to be 
 debugged when it did not run as expected.
 
