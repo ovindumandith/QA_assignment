@@ -69,8 +69,6 @@ productivity tool — not as a replacement for my own understanding.
 - I reviewed each generated class, verified the locators against the live 
   OrangeHRM application using Chrome DevTools, and corrected selectors that 
   did not match the actual DOM.
-- The testng.xml and pom.xml were generated with Claude's assistance and 
-  adjusted by me to resolve dependency and compilation issues.
 
 ### Step 7 - Debugging Challenge
 - The intentional bug strategy (wrong CSS selector) was suggested by Claude 
@@ -79,13 +77,7 @@ productivity tool — not as a replacement for my own understanding.
 - The debugging steps (reading the stack trace, inspecting the DOM with 
   DevTools, validating the selector in the Console) were performed by me 
   manually on the live application.
-- Claude helped me write up the debugging report clearly for the PDF submission.
 
-### Step 8 - Reflection Video
-- Claude provided a suggested script structure for the 5-minute video.
-- The actual recording, narration, and demonstration were done by me.
-- I adapted the script based on what I actually built rather than reading it 
-  word for word.
 
 ---
 
