@@ -109,7 +109,3 @@ that understanding, errors in AI-generated code or analysis would go unnoticed.
 
 ---
 
-*I confirm that this AI usage declaration is complete and accurate.*
-
-**Student:** 22020284  
-**Date:** August 5, 2026
